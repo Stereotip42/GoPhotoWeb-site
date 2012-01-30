@@ -1,0 +1,4 @@
+[2010-10-26 14:01:18] Exception: Model file saf.class.php not found in Z:\home\weegbo.loc\www\system\controllers\main.class.php on line 20
+[2010-10-26 14:04:05] Warning (2) - MainController::require(asfdasd) [<a href='function.MainController-require'>function.MainController-require</a>]: failed to open stream: No such file or directory in Z:\home\weegbo.loc\www\system\controllers\main.class.php on line 20
+[2010-10-26 14:05:01] Exception: Model file saf.class.php not found in Z:\home\weegbo.loc\www\system\controllers\main.class.php on line 22
+[2010-10-26 14:06:05] Exception: Model file saf.class.php not found in Z:\home\weegbo.loc\www\system\controllers\main.class.php on line 22

@@ -1,0 +1,33 @@
+/**
+* @bugfix IE HasLayot adding
+* @affected IE6, IE7
+* @css-for IE6, IE7
+* @valid no
+*/
+.clrfix, .b-choose-site-i, .b-choose-site, .l-home .b-col {zoom:1;}
+
+
+/**
+* @bugfix IE inline-blocks support
+* @affected IE6, IE7
+* @css-for IE6, IE7
+* @valid no
+*/
+.b-home-head ul li {zoom:1; display:inline;}
+
+
+/**
+* @bugfix IE float instead of display table-cell
+* @affected IE6, IE7
+* @css-for IE6, IE7
+* @valid yes
+*/
+.l-home .l-col {float:left; background:none;}
+.l-home {background:url(../images/dots-home-ie.gif) repeat-y 255px 0;}
+
+
+.nav-top li ul li a, .nav-top li ul li a:visited {min-width:180px;}
+
+
+
+

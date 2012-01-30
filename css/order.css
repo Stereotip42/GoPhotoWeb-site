@@ -1,0 +1,77 @@
+/**
+* @section Order
+*/
+.b-order-note {background:url(../images/ico-note.png) no-repeat 0 4px; padding-left:65px; width:740px; margin:0 0 22px 42px; padding-top:13px;}
+	.b-order-note p {color:#4c6367; font-family:"Century Gothic", Verdana, Geneva, sans-serif; font-size:14px; margin-bottom:1px;}
+		.b-order-note p span {font-size:11px; color:#658d96;}
+
+.b-order {font-family:"Century Gothic", Verdana, Geneva, sans-serif; font-size:14px; padding-left:40px; padding:0 65px 0 110px; overflow:hidden;}
+	.b-order h3 {font-size:22px; color:#4c6367; font-weight:300; text-transform:none; margin-bottom:8px;}
+	.b-order-name { background:url(../images/dots-order.png) repeat-x 0 100%; clear:both; line-height:1; margin-bottom:20px;}
+		.b-order-name h2 {background:#fff; color:#4c6367; font-size:22px; float:left; bottom:-4px; position:relative; padding-right:10px;margin-bottom: 0;}
+			.b-order-name h2 span {font-weight:300; font-size:32px; color:#658d96; margin-left:5px;}
+		.b-order-name .price {float:right; font-size:32px; color:#658d96; background:#fff; position:relative; bottom:-4px; padding-left:10px;}
+			.b-order-name .price sup {font-size:20px; vertical-align:top;}
+
+
+	.b-order-site {margin-bottom:27px;}
+		.b-order-img {float:left; width:420px;}
+			.b-order-img img {display:block; border:1px solid #daddde;}
+		.b-order-colors {float:left; padding:0 0 0 32px; width:200px;}
+			.b-order-colors * {vertical-align:top;}
+			.b-order-colors label {display:block; margin-bottom:13px;}
+			.b-order-colors img {border:1px solid #dde0e1;}
+			.b-order-colors input {margin-top:0; margin-right:6px;}
+
+	.f-order-new {margin-bottom:15px;}
+		.f-order-new .f-col {float:left; width:392px;}
+			.f-order-new .textbox {padding: 2px 8px 1px; border-color:#bfcece; color:#898989; font-size:13px; margin-bottom:11px; width:260px; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; font-family:Arial, Helvetica, sans-serif;}
+			.f-order-new select.textbox {padding:1px 2px 0 8px; width:270px;}
+
+	.b-order-options {margin-bottom:27px;}
+		.b-order-options h3  {margin-bottom:5px; position:relative;}
+		.b-order-options h3 span {color:#4c6367; background:url(../images/icon-help.png) no-repeat 100% 8px; padding-right:25px; cursor:pointer;}
+		.b-order-options h3 a {color:#4c6367;}
+		.b-order-options .line {background:url(../images/dots-order.png) repeat-x 0 100%; color:#658d96; line-height:1; margin-bottom:7px;}
+			.b-order-options .line label {float:left; font-size:14px; background:#fff; position:relative; bottom:-2px; padding-right:5px;}
+				.b-order-options .line label input {margin:-3px 10px 0 0; position:relative;}
+				.b-order-options .line label a {color:#658d96; text-decoration:underline;}
+				.b-order-options .line label a:hover {text-decoration:none;}
+			.b-order-options .line .price {float:right; font-size:16px; background:#fff; padding-left:5px; color:#4c6367; position:relative; bottom:-1px;}
+
+	span.lnk-order-tooltip {position:relative;}
+
+	.b-order-tooltip {position:absolute; top:30px; left:0; background:#fff; width:345px; display:none; z-index:100; -moz-box-shadow:0 3px 3px #cecece, 3px 0 3px #cecece, -3px 0 3px #cecece, 0 -3px 3px #cecece; -webkit-box-shadow:0 3px 3px #cecece, 3px 0 3px #cecece, -3px 0 3px #cecece, 0 -3px 3px #cecece; box-shadow:0 3px 3px #cecece, 3px 0 3px #cecece, -3px 0 3px #cecece, 0 -3px 3px #cecece; cursor:default;}
+		.b-order-tooltip-i {padding:13px 18px 7px;}
+		.b-order-tooltip h4 {font-size:16px; font-weight:700; margin-bottom:10px; color:#4c6367; line-height:1;}
+		.b-order-tooltip p {font-size:12px; font-family:Verdana, Geneva, sans-serif; margin-bottom:6px; color:#4c6367; line-height:1.2;}
+			.b-order-tooltip p strong {font-weight:700;}
+			.b-order-tooltip p a {color:#4c6367;}
+			.b-order-tooltip p a:hover {text-decoration:underline;}
+		.b-tooltip-close {position:absolute; right:5px; top:-10px; cursor:pointer; z-index:200;}
+
+	.b-order-options .line .b-order-tooltip {left:-25px; top:20px;}
+	.b-order-options .line .b-tooltip-close {top:5px;}
+	.b-order-options .line .b-order-tooltip p a {color:#4c6367; text-decoration:none;}
+	.b-order-options .line .b-order-tooltip p a:hover {text-decoration:underline;}
+
+	.b-order-total { line-height:1; background:url(../images/dots-order-total.png) repeat-x 0 100%; margin-bottom:36px;}
+		.b-order-total h3 {background:#fff; float:left; margin-bottom:0; position:relative; bottom:-13px; padding-right:5px;}
+		.b-order-total .price {background:#fff; float:right; font-size:32px; position:relative; bottom:-3px; color:#4c6367; padding-left:5px;}
+			.b-order-total .price sup {vertical-align:top; font-size:20px;}
+
+	.b-order-feedback {clear:both; margin-bottom:40px;}
+		.f-order-feedback {float:left; width:643px;padding-right: 0;}
+		.f-order-feedback label {margin-bottom:8px; display:block; line-height:1.2;font-size: 14px;}
+			.f-order-feedback textarea {width:610px; height:65px; margin-bottom:13px;}
+			.f-order-feedback .button {}
+            .f-order-feedback #error {width: 714px; color: red; display: none}
+		.b-order-feedback-note {float:left; width:187px; font-size:11px; padding-top:40px; color:#a9a9a9; margin-right:-45px; line-height:1.35;}
+
+.b-order-tooltip {
+     border:1px solid #cecece\0/;
+}
+
+#agreement {
+    margin-bottom: 27px;  width: 673px;
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /dogovor_oferta.html
+Disallow: /agreement.html
+Host: www.gophotoweb.ru
