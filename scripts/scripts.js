@@ -168,6 +168,7 @@ OrderModel = {
     id: '',
     flag: true,
     path: '',
+    discount: 1,
     init: function(path, id) {
 
         $('.jstyling-radio').css('margin-right', '6px');
@@ -221,20 +222,28 @@ OrderModel = {
                 $(this).val($(this).attr('tooltip'));
             }
         });
-        OrderModel.priceRefresh();
-        $('input[type=radio], input[type=checkbox]').bind('click', function(){ OrderModel.priceRefresh(); });
+        OrderModel.priceRefresh(1);
+        $('input[name=discount]').click(function(){
+            if ($(this).is(':checked')) {
+                OrderModel.discount = 0.7;
+            }
+            else {
+                OrderModel.discount = 1;
+            }
+            OrderModel.priceRefresh(OrderModel.discount);
+        });
+        $('input[type=radio], input[type=checkbox]').bind('click', function(){ OrderModel.priceRefresh(OrderModel.discount); });
     },
-    priceRefresh: function() {
+    priceRefresh: function(discount) {
         var sitePrice = parseInt($('.price:first').html());
         var otherPrice = 0;
         $('.line > label > input:checked').parent().parent().children('.price').each(function(){
             otherPrice += (parseInt($(this).html()));
-        });
-        $('.line > label > div > input:checked').parent().parent().parent().children('.price').each(function(){
-            otherPrice += (parseInt($(this).html()));
-        });
 
-        $('.price:last').html((sitePrice + otherPrice) + '<sup>$</sup>');
+        });
+        otherPrice += (parseInt($('.line > label > div > input:checked:last').parent().parent().parent().children('.price').html()));
+        var hostingPrice = parseInt($('.line > label > div > input:checked:first').parent().parent().parent().children('.price').html());
+        $('.price:last').html((parseInt((sitePrice + otherPrice) * discount + hostingPrice)) + '<sup>$</sup>');
     },
     validate: function() {
         $('#name, #phone, #email').removeClass('error');
