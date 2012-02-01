@@ -126,7 +126,7 @@ body{height: 100%}
     padding-top:14px;
 }
 .l-content-head{width: 525px; margin: 0 auto; margin-top: 10px; text-align: center; color: #8c8d8d; font: normal 14.5px Verdana;}
-#price-hosting{font-family: Verdana; width: 270px; height: 74px; text-align: center; padding: 18px; background: url(/images/price-hosting.gif); margin: 0 auto; margin-top: 30px}
+#price-hosting{font-family: Verdana; width: 270px; height: 74px; text-align: center; padding: 18px; background: url(/images/price-hosting.gif); margin: 0 auto;}
 #price-hosting h3{font: normal 18px Verdana; color: #656767}
 #price-hosting #price{font: normal 24px "Century Gothic"; color: #538187}
 #price-hosting .year{font-family: "Century Gothic"}
