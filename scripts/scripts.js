@@ -243,7 +243,7 @@ OrderModel = {
         });
         otherPrice += (parseInt($('.line > label > div > input:checked:last').parent().parent().parent().children('.price').html()));
         var hostingPrice = parseInt($('.line > label > div > input:checked:first').parent().parent().parent().children('.price').html());
-        $('.price:last').html((parseInt((sitePrice + otherPrice) * discount + hostingPrice)) + '<sup>$</sup>');
+        $('.price:last').html((parseInt((sitePrice + otherPrice + hostingPrice) * discount)) + '<sup>$</sup>');
     },
     validate: function() {
         $('#name, #phone, #email').removeClass('error');

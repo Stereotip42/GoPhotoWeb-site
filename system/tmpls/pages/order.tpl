@@ -89,8 +89,8 @@ $(function(){
       					</div>
                           <label id="discount-label">
                               <p><input type="checkbox" name="discount" value="" />
-                              <span style="white-space: nowrap; font-size: 14px">Воспользоваться 30% скидкой MywedPRO <span>(только для членов клуба)</span>. Скидка не работает в период акций.</span>
-                                <br /><a href="#">узнать подробнее об условиях</a></p>
+                              <span style="white-space: nowrap; font-size: 14px">Воспользоваться 30% скидкой для членов <a href="http://www.mywed.ru/pro/" target="_blank" style="margin-left:0px; font-size: 14px">клуба MyWed Pro</a> (cкидка не работает в период акций).</span>
+                              <br /><a href="#">узнать подробнее об условиях</a></p>
                           </label>
 
       					<div class="b-order-options">
