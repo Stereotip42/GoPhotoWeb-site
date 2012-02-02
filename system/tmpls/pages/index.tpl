@@ -45,9 +45,9 @@
                 $('#slideblock-controls a.active').removeClass('active');
                 $(this).addClass('active');
                 if ($(this).index() == 1)
-                    $('.l-header-i > a').attr('href', 'http://blog.gophotoweb.ru/mywed-pro/');
-                else
                     $('.l-header-i > a').attr('href', '<?=$path_host?>catalog.html');
+                else
+                    $('.l-header-i > a').attr('href', 'http://blog.gophotoweb.ru/mywed-pro/');
                 Slider.manualSlide($(this).index() + 1);
                 Slider.isClicked = true;
             }
