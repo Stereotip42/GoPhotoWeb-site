@@ -31,7 +31,7 @@
             if (index == 1)
                 $('.l-header-i > a').attr('href', '<?=$path_host?>catalog.html');
             else
-                $('.l-header-i > a').attr('href', '<?=$path_host?>catalog.html');
+                $('.l-header-i > a').attr('href', 'http://blog.gophotoweb.ru/mywed-pro/');
             $('#slideblock-controls a.active').removeClass('active');
             $('#slideblock-controls a').eq(index).addClass('active');
             Slider.manualSlide(index+1);
@@ -83,7 +83,7 @@
                 <div class="l-header-i index-h">
                     <?php $this->template('pages/topmenu.tpl')?>
                     <!--<div class="b-head-img index-header clrfix"></div>-->
-                    <a href="<?=$path_host?>catalog.html"><div class="b-head-img index-header clrfix">
+                    <a href="http://blog.gophotoweb.ru/mywed-pro/"><div class="b-head-img index-header clrfix">
                         <div id='more'></div>
                     </div></a>
             </div>
