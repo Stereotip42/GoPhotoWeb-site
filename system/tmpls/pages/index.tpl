@@ -1,7 +1,6 @@
 <?php $this->template('pages/header.tpl')?>
 
-
-<!-- <script type="text/javascript">
+<script type="text/javascript">
     Slider = {
         flag : true,
         action: false,
@@ -59,7 +58,7 @@
        });        
     });
 
-</script> -->
+</script>
 <div class="foot" style="min-height: 160%">
 <div class="l-main-container">
     <div class='l-wrapper-up'">
@@ -67,18 +66,19 @@
             <div class="l-header" style="margin-top: -464px; background: url(../images/hears.png) no-repeat 50% 493px; overflow: hidden;">
                 <div id='slideblock'>
                     <div id="slideblock-slider">
-                        <img id='i1' class="slide" src="<?=Config::get('path/host');?>images/slide2.jpg"/>
+                    	<img id='i1' class="slide" src="<?=Config::get('path/host');?>images/slide1.jpg"/>
+                        <img id='i2' class="slide" src="<?=Config::get('path/host');?>images/slide2.jpg"/>
                     </div>
                     
                     
-                    <!-- <div id="slideblock-controls">
+                     <div id="slideblock-controls">
                         <a href="#" id="p1" class="active">
                             <img src="<?=Config::get('path/host');?>images/i.gif" width="17" height="15">
                         </a>
                         <a href="#" id="p2">
                             <img src="<?=Config::get('path/host');?>images/i.gif" width="17" height="15">
                         </a>
-                    </div> -->
+                    </div>
                 </div>
                 <div class="l-header-i index-h">
                     <?php $this->template('pages/topmenu.tpl')?>
