@@ -16,74 +16,57 @@
 						<a href="<?=Config::get('path/host');?>contacts.html">Задайте его нам!</a> </div>
 				</div>
 				<div class="b-side">
-					<div class="b-side-choose scrin">
-						<p>выбери СВОЙ сайт<br /> <a href="<?=Config::get('path/host');?>catalog.html" class="lnk-alt">в каталоге GoPhotoWeb</a></p>
-                        <?php foreach ($preview as $item):?>
-                            <a href="<?=Config::get('path/host');?>website-<?=$item[1]?>.html/">
-                                <img src="<?=Config::get('path/host');?>storage/hosting/<?=$item[0]?>.jpg" width="232" height="135" alt="" />
-                            </a>
-                        <?php endforeach;?>
-					</div>
+					<p><b> Что такое хостинг? </b></p>
+					<p style="text-align: justify;"> Хостинг — это услуга по размещению вашего сайта в сети Интернет. От хостинга зависят две важные вещи: будет ли ваш сайт всегда доступен для посетителей и насколько быстро ваш сайт будет работать. Как правило, в услугу хостинга также входит предоставление места для электронной почты, баз данных и файлового хранилища.</p>
+					<p><b>Можно ли использовать для размещения сайта свой хостинг?</b> </p>
+					<p style="text-align: justify;"> Конечно. Для работы любого сайта из каталога GoPhotoWeb достаточно стандартных характеристик обычного хостинга: Unix-хостинг, веб-сервер Apache (mod_rewrite), поддержка PHP 5.2, одна база данных MySQL 5. Стоимость переноса и настройки работы сайта на стороннем хостинге составляет 75$.</p>
+					<p><b>Где расположены ваши сервера?</b> </p>
+					<p style="text-align: justify;">Сервера GoPhotoWeb расположены в дата-центре «Агава-Север», который находится в 4 км от МКАД — в городе Долгопрудном. Это один из самых современных и надежных центров обработки данных, позволяющий обеспечить максимальное время доступности (uptime) серверов и их безопасность.</p>
+					
+					
 				</div>
 			</div>
 			<div class="r-main">
 				<div class="l-content">
-                    <div class="l-content-head">
-                        Покупка хостинга, выбор тарифного плана, своевременная
-                        оплата и обслуживание своего сайта &mdash; это зачастую лишняя головная боль
-                        для фотографа. Наша задача состоит в том, чтобы вы забыли, что такое хостинг вообще!
-                    </div>
-                    <div class="clear"></div>
-                    <div id="price-hosting">
+					<p>Мы&nbsp;хотим, чтобы вы&nbsp;забыли о&nbsp;том, что для сайта нужно еще искать хостинговую компанию, читать о&nbsp;ней отзывы, узнавать требования, выбирать тариф, заботиться о&nbsp;резервном копировании данных <nobr>и т.д.</nobr> Все это не&nbsp;так сложно, но&nbsp;занимает немалое время. Именно поэтому мы&nbsp;сделали все это за&nbsp;вас!</p>
+                    <p style="text-align:center;"> <b> Если у вас уже есть предоплаченный период за услуги хостинга в другом месте, то при выборе хостинга от GoPhotoWeb вы можете размещать сайт на нашей площадке <span style="color:#F8AA01">БЕСПЛАТНО</span> в течение этого периода (но не более одного года).</b> </p>
+					
+					<div class="clear"></div>
+					<div id="price-hosting">
                         <h3>СТОИМОСТЬ УСЛУГИ</h3>
-                        <span class="name">"хостинг и обслуживание":</span><br>
+                        <span class="name"></span><br>
                         <span id="price" style="color:#F8AA01"> 75$ </span><span class="year">/ год</span>                      
                     </div>
                     <div class="clear"></div>
                     <div class="paramhosting">
-                        <span class="title">Параметры хостинга:</span><br>
+                        <span class="title">Характеристики хостинга:</span><br>
                         <table class="paramitem">
                             <tr>
-                                <td><img src="<?=Config::get('path/host')?>images/paramitem.png" alt="">&nbsp;<span>2GB дискового пространства</span></td>
+                                <td><img src="<?=Config::get('path/host')?>images/paramitem.png" alt="">&nbsp;<span>3GB дискового пространства</span></td>
                                 <td><img src="<?=Config::get('path/host')?>images/paramitem.png" alt="">&nbsp;<span>10 почтовых ящиков</span></td>
                             </tr>
                             <tr>
                                 <td><img src="<?=Config::get('path/host')?>images/paramitem.png" alt="">&nbsp;<span>Неограниченный трафик</span></td>
                                 <td><img src="<?=Config::get('path/host')?>images/paramitem.png" alt="">&nbsp;<span>Поддержка и консультации</span></td>
                             </tr>
+                            <tr>
+                                <td><img src="<?=Config::get('path/host')?>images/paramitem.png" alt="">&nbsp;<span>Статистика сайта от Google Analytics</span></td>
+                                <td><img src="<?=Config::get('path/host')?>images/paramitem.png" alt="">&nbsp;<span>Резервное копирование данных</span></td>
+                            </tr>
                         </table>
                     </div>
                     <div class="preferences">
-                        <span class="title">Преимущества хостинга и обслуживания от gophotoweb:</span><br>
-                        <table class="prefitem">
-                            <tr>
-                                <td class="pict"><img src="<?=Config::get('path/host')?>images/pref1.png" alt=""></td>
-                                <td class="cont">
-                                    Современный Мир не стоит на месте и постоянно появляются новые возможности для вашего 
-                                    сайта: версия для iPhone/iPad, настраиваемые flash-галереи, видео и пр. 
-                                    GoPhotoWeb вышагивает рядом со всеми инновациями и позволяет вам не упустить ни одну 
-                                    из предложенных возможностей.
-                                    Сотрудничая с  GoPhotoWeb, вы можете не беспокоиться за будущее вашего сайта. 
-                                    В любое время мы сможем изменить его, ориентируясь на ваши новые потребности.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="pict"><img src="<?=Config::get('path/host')?>images/pref2.png" alt=""></td>
-                                <td class="cont">
-                                    Наши сервера служат для обеспечения максимальной производительности, мы всегда храним 
-                                    резервные копии, а знакомый вам представитель поддержки gophotoweb будет вашим 
-                                    постоянным консультантом по любым вопросам работы сайта и хостинга.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="pict"><img src="<?=Config::get('path/host')?>images/pref3.png" alt=""></td>
-                                <td class="cont">
-                                    Скидки на будущие услуги от gophotoweb! <br>
-                                    Если в будущем вы решите, что текущий сайт уже не соответствует вашим требованиям или 
-                                    вашему стилю, то вы получите 25% скидку на покупку/создание нового сайта.
-                                </td>
-                            </tr>
-                        </table>
+                       <span class="title">Преимущества хостинга от GoPhotoWeb:</span><br>
+                       <b>
+                       <p style="text-align:left;"> 1. Все клиенты нашего хостинга получают 25% скидку на покупку нового сайта.</p>
+                       <p style="text-align:left;">	2. Стоимость замены расцветки сайта в несколько раз ниже. </p>
+                       <p style="text-align:left;"> 3. Возможность получать все новые опции сайтов первыми и на бонусных условиях.</p>
+                       <p style="text-align:left;"> 4. Возможность выиграть призы от компании Apple в ежегодном розыгрыше среди клиентов. </p>                      
+                       <p style="text-align:left;"> 5. Быстрая работа сайта (скорость загрузки страниц). </p>
+					   <p style="text-align:left;"> 6. Мы следим за качеством работы исходного кода наших сайтов и безопасностью всех сайтов на площадке GoPhotoWeb.</p>
+					   <p style="text-align:left;"> 7. Более высокие минимальные ограничения по лимитам размеров закачиваемых файлов, времени работы скриптов по сравнению со стандартными хостингами. </p>
+                       </b>
+                       <br />
                     </div>
 				</div>
                 </div>
