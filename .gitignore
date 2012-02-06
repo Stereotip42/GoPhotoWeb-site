@@ -1,3 +1,7 @@
 .idea/
 .DS_STORE
+<<<<<<< HEAD
 database.php
+=======
+system/config/database.php
+>>>>>>> c4bdc517860e2c07ad8442971ee59f8a28c388a0

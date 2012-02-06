@@ -88,9 +88,9 @@ $(function(){
       						</div>
       					</div>
                           <label id="discount-label">
-                              <p><input type="checkbox" name="discount" value="" />
-                              <span style="white-space: nowrap; font-size: 14px">Воспользоваться 30% скидкой MywedPRO <span>(только для членов клуба)</span>. Скидка не работает в период акций.</span>
-                                <br /><a href="#">узнать подробнее об условиях</a></p>
+							  <p><input type="checkbox" value="" name="discount">
+                              <span style="white-space: nowrap; font-size: 14px">Воспользоваться 30% скидкой для членов <a style="margin-left:0px; font-size: 14px; color:#658D96; text-decoration:underline;" target="_blank" href="http://www.mywed.ru/pro/">клуба MyWed Pro</a> (cкидка не работает в период акций).</span>
+                              <br><a target="_blank" href="http://blog.gophotoweb.ru/mywed-pro/" style="color:#658D96; text-decoration:underline;">узнать подробнее об условиях</a></p>
                           </label>
 
       					<div class="b-order-options">

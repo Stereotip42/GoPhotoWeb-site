@@ -1,7 +1,6 @@
 <?php $this->template('pages/header.tpl')?>
 
-
-<!-- <script type="text/javascript">
+<script type="text/javascript">
     Slider = {
         flag : true,
         action: false,
@@ -32,7 +31,7 @@
             if (index == 1)
                 $('.l-header-i > a').attr('href', '<?=$path_host?>catalog.html');
             else
-                $('.l-header-i > a').attr('href', '<?=$path_host?>catalog.html');
+                $('.l-header-i > a').attr('href', 'http://blog.gophotoweb.ru/mywed-pro/');
             $('#slideblock-controls a.active').removeClass('active');
             $('#slideblock-controls a').eq(index).addClass('active');
             Slider.manualSlide(index+1);
@@ -48,7 +47,7 @@
                 if ($(this).index() == 1)
                     $('.l-header-i > a').attr('href', '<?=$path_host?>catalog.html');
                 else
-                    $('.l-header-i > a').attr('href', '<?=$path_host?>catalog.html');
+                    $('.l-header-i > a').attr('href', 'http://blog.gophotoweb.ru/mywed-pro/');
                 Slider.manualSlide($(this).index() + 1);
                 Slider.isClicked = true;
             }
@@ -59,7 +58,7 @@
        });        
     });
 
-</script> -->
+</script>
 <div class="foot" style="min-height: 160%">
 <div class="l-main-container">
     <div class='l-wrapper-up'">
@@ -67,23 +66,24 @@
             <div class="l-header" style="margin-top: -464px; background: url(../images/hears.png) no-repeat 50% 493px; overflow: hidden;">
                 <div id='slideblock'>
                     <div id="slideblock-slider">
-                        <img id='i1' class="slide" src="<?=Config::get('path/host');?>images/slide2.jpg"/>
+                    	<img id='i1' class="slide" src="<?=Config::get('path/host');?>images/slide1.jpg"/>
+                        <img id='i2' class="slide" src="<?=Config::get('path/host');?>images/slide2.jpg"/>
                     </div>
                     
                     
-                    <!-- <div id="slideblock-controls">
+                     <div id="slideblock-controls">
                         <a href="#" id="p1" class="active">
                             <img src="<?=Config::get('path/host');?>images/i.gif" width="17" height="15">
                         </a>
                         <a href="#" id="p2">
                             <img src="<?=Config::get('path/host');?>images/i.gif" width="17" height="15">
                         </a>
-                    </div> -->
+                    </div>
                 </div>
                 <div class="l-header-i index-h">
                     <?php $this->template('pages/topmenu.tpl')?>
                     <!--<div class="b-head-img index-header clrfix"></div>-->
-                    <a href="<?=$path_host?>catalog.html"><div class="b-head-img index-header clrfix">
+                    <a href="http://blog.gophotoweb.ru/mywed-pro/"><div class="b-head-img index-header clrfix">
                         <div id='more'></div>
                     </div></a>
             </div>
@@ -99,7 +99,7 @@
                 <div class="l-col">
                     <div class="b-col">
                         <h3>Дополнительные опции</h3>
-                        <p>Ваш сайт может стать более функциональным и&nbsp;удобным&nbsp;&mdash; все это благодаря дополнительным опциям, которые вы&nbsp;можете заказать к&nbsp;любому г сайту из&nbsp;каталога Gophotoweb: музыка, <nobr>видео-галереи</nobr> (интеграция с&nbsp;Vimeo/Youtube), подстройка сайта под экран, несколько языковых версий сайта.</p>
+                        <p>Ваш сайт может стать более функциональным и&nbsp;удобным&nbsp;&mdash; все это благодаря дополнительным опциям, которые вы&nbsp;можете заказать к&nbsp;любому сайту из&nbsp;каталога Gophotoweb: музыка, <nobr>видео-галереи</nobr> (интеграция с&nbsp;Vimeo/Youtube), подстройка сайта под экран, несколько языковых версий сайта.</p>
                         <p class="b-more"><a href="upgrade-my-site.html">подробнее &raquo;</a></p>
                     </div>
                 </div>
