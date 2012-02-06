@@ -302,6 +302,7 @@ OrderModel = {
             var logo = $('input[name=logo]:checked').val();
             var namesite = $('.b-order-name > h2 > span').html()+'-'+$('.b-order-colors > label > div > input:checked').parent().parent('label').attr('id');
             var other = [];
+            var discount = $('input[name=discount]').is(':checked') ? 'y' : 'n';
             $('input[name=other]:checked').each(function(){
                 other.push($(this).val());
             });
@@ -318,7 +319,7 @@ OrderModel = {
             else {
                 $.post(OrderModel.path+"send_site_new.html",
                     {name:name, mess:mess, email:email, phone:phone, skype:skype, communication:communication,
-                        from:source, namesite:namesite, country:country, other:other, url:url}, function(response){
+                        from:source, namesite:namesite, country:country, other:other, url:url, discount:discount}, function(response){
                             if (response === "ok") {
                                 window.location = OrderModel.path+"order_success.html";
                             }
