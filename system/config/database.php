@@ -23,12 +23,9 @@ return array(
     'database' => array(
         'driver' => 'mysql',
         'host' => 'localhost',
-        'user' => 'root',
-        'pass' => 'root',
+        'user' => 'gophotoweb',
+        'pass' => 'qBcgR1PQ',
         'db' => 'gophotoweb',
-//        'user' => 'gophotoweb',
-//        'pass' => 'qBcgR1PQ',
-//        'db' => 'gophotoweb',
         'prefix' => 'gphw_',
         'charset' => 'utf8'
     )
