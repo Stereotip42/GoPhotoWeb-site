@@ -31,8 +31,6 @@
                 <img src="<?=Config::get('path/host')?>storage/full_description_big/9_3_2.jpg" width="677" height="393" alt="" id = "i9_3_2"/>
                 <img src="<?=Config::get('path/host')?>storage/full_description_big/9_3_3.jpg" width="677" height="393" alt="" id = "i9_3_3"/>
                 <img src="<?=Config::get('path/host')?>storage/full_description_big/9_3_4.jpg" width="677" height="393" alt="" id = "i9_3_4"/>
-
-
             </div>
         </a>
         <div class="b-catalog-pager-new">
@@ -64,7 +62,8 @@
         <div class="b-catalog-colors-new clrfix">
             <div class="b-discount-new"></div>
             <div class="b-discount">
-                <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
+                <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span><br />
+                <span style="color:#485B58">+ все опции в подарок!</span>
             </div>
             <div class="pages-vers"></div>
             <p class="catalog-pages">
