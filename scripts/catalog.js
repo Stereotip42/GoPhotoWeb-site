@@ -47,7 +47,7 @@
             }
         });
         $(".catalog-pages img").hover(function(){
-            var sites = new Array('Sofia', 'Jane', 'Denis', 'Kelly', 'Joe', 'Mira', 'Mika', 'Anna');
+            var sites = new Array('Sofia', 'Jane', 'Denis', 'Kelly', 'Joe', 'Mira', 'Mika', 'Anna','Alex');
             var id = $(this).attr('id').substr(1, $(this).attr('id').length);
             var numbSite = id.split('_');
             var ref = "http://demo." + sites[numbSite[0] - 1] + "-" + numbSite[1] + ".gophotoweb.ru";
