@@ -62,8 +62,8 @@
             <h2>Alex</h2>
         </div>
         <div class="b-catalog-colors-new clrfix">
-
-            <div class="b-discount-new">
+            <div class="b-discount-new"></div>
+            <div class="b-discount">
                 <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
             </div>
             <div class="pages-vers"></div>
