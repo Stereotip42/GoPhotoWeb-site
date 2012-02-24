@@ -14,6 +14,90 @@
 <div class="l-catalog-new clrfix">
 
 
+<!-- Alex -->
+<div class="b-catalog-item-new clrfix">
+    <div class="b-catalog-img-new">
+        <a href="http://demo.alex-1.gophotoweb.ru" class="big-photo-ref" target="_blank">
+            <div class="catalog-photo loading">
+                <img src="<?=Config::get('path/host')?>storage/full_description_big/9_1_1.jpg" width="677" height="393" alt="" id = "i9_1_1" class="current"/>
+                <img src="<?=Config::get('path/host')?>storage/full_description_big/9_1_2.jpg" width="677" height="393" alt="" id = "i9_1_2"/>
+                <img src="<?=Config::get('path/host')?>storage/full_description_big/9_1_3.jpg" width="677" height="393" alt="" id = "i9_1_3"/>
+                <img src="<?=Config::get('path/host')?>storage/full_description_big/9_1_4.jpg" width="677" height="393" alt="" id = "i9_1_4"/>
+                <img src="<?=Config::get('path/host')?>storage/full_description_big/9_2_1.jpg" width="677" height="393" alt="" id = "i9_2_1"/>
+                <img src="<?=Config::get('path/host')?>storage/full_description_big/9_2_2.jpg" width="677" height="393" alt="" id = "i9_2_2"/>
+                <img src="<?=Config::get('path/host')?>storage/full_description_big/9_2_3.jpg" width="677" height="393" alt="" id = "i9_2_3"/>
+                <img src="<?=Config::get('path/host')?>storage/full_description_big/9_2_4.jpg" width="677" height="393" alt="" id = "i9_2_4"/>
+                <img src="<?=Config::get('path/host')?>storage/full_description_big/9_3_1.jpg" width="677" height="393" alt="" id = "i9_3_1"/>
+                <img src="<?=Config::get('path/host')?>storage/full_description_big/9_3_2.jpg" width="677" height="393" alt="" id = "i9_3_2"/>
+                <img src="<?=Config::get('path/host')?>storage/full_description_big/9_3_3.jpg" width="677" height="393" alt="" id = "i9_3_3"/>
+                <img src="<?=Config::get('path/host')?>storage/full_description_big/9_3_4.jpg" width="677" height="393" alt="" id = "i9_3_4"/>
+
+
+            </div>
+        </a>
+        <div class="b-catalog-pager-new">
+            <span id='b9_1_1' class="active"></span>
+            <span id='b9_1_2'></span>
+            <span id='b9_1_3'></span>
+            <span id='b9_1_4'></span>
+            <!--	<span id='b9_1_5'></span> -->
+
+            <span style='display: none' id='b9_2_1' class="active"></span>
+            <span style='display: none' id='b9_2_2'></span>
+            <span style='display: none' id='b9_2_3'></span>
+            <span style='display: none' id='b9_2_4'></span>
+            <!--<span style='display: none' id='b9_2_5'></span>-->
+
+            <span style='display: none' id='b9_3_1' class="active"></span>
+            <span style='display: none' id='b9_3_2'></span>
+            <span style='display: none' id='b9_3_3'></span>
+            <span style='display: none' id='b9_3_4'></span>
+            <!--<span style='display: none' id='b9_3_5'></span>-->
+
+            
+        </div>
+    </div>
+    <div class="b-catalog-desc-new">
+        <div class="b-catalog-head-new clrfix">
+            <h2>Alex</h2>
+        </div>
+        <div class="b-catalog-colors-new clrfix">
+
+            <div class="b-discount">
+                <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
+            </div>
+            <div class="pages-vers"></div>
+            <p class="catalog-pages">
+                <a href="http://demo.alex-1.gophotoweb.ru" target="_blank" title="Кликните для открытия демо-версии">
+                    <img alt="" class="active" height="38" id="c9_1" src="<?=Config::get('path/host')?>storage/full_description_colors/alex1.jpg" width="38" /></a>
+                <a href="http://demo.alex-2.gophotoweb.ru" target="_blank" title="Кликните для открытия демо-версии">
+                    <img alt="" height="38" id="c9_2" src="<?=Config::get('path/host')?>storage/full_description_colors/alex2.jpg" width="38" /></a>
+                <a href="http://demo.alex-3.gophotoweb.ru" target="_blank" title="Кликните для открытия демо-версии">
+                    <img alt="" height="38" id="c9_3" src="<?=Config::get('path/host')?>storage/full_description_colors/alex3.jpg" width="38" /></a>
+            </p>
+            <div class="version"></div>
+                <p class="b-catalog-pages">
+                    <img alt="" class="current active" height="58" id="p9_1_1" src="<?=Config::get('path/host')?>storage/full_description_pages/9_1_1.jpg" width="98" />
+                    <img alt="" height="58" id="p9_2_1" src="<?=Config::get('path/host')?>storage/full_description_pages/9_2_1.jpg" width="98" />
+                    <img alt="" height="58" id="p9_3_1" src="<?=Config::get('path/host')?>storage/full_description_pages/9_3_1.jpg" width="98" />
+                    <img alt="" class="current" height="58" id="p9_1_2" src="<?=Config::get('path/host')?>storage/full_description_pages/9_1_2.jpg" width="98" />
+                    <img alt="" height="58" id="p9_2_2" src="<?=Config::get('path/host')?>storage/full_description_pages/9_2_2.jpg" width="98" />
+                    <img alt="" height="58" id="p9_3_2" src="<?=Config::get('path/host')?>storage/full_description_pages/9_3_2.jpg" width="98" />
+                    <img alt="" class="current" height="58" id="p9_1_3" src="<?=Config::get('path/host')?>storage/full_description_pages/9_1_3.jpg" width="98" />
+                    <img alt="" height="58" id="p9_2_3" src="<?=Config::get('path/host')?>storage/full_description_pages/9_2_3.jpg" width="98" />
+                    <img alt="" height="58" id="p9_3_3" src="<?=Config::get('path/host')?>storage/full_description_pages/9_3_3.jpg" width="98" />
+                    <img alt="" class="current" height="58" id="p9_1_4" src="<?=Config::get('path/host')?>storage/full_description_pages/9_1_4.jpg" width="98" />
+                    <img alt="" height="58" id="p9_2_4" src="<?=Config::get('path/host')?>storage/full_description_pages/9_2_4.jpg" width="98" />
+                    <img alt="" height="58" id="p9_3_4" src="<?=Config::get('path/host')?>storage/full_description_pages/9_3_4.jpg" width="98" />
+                </p>
+        </div>
+        <div class="b-catalog-btns-new">
+            <a class="a1 button btn-open" href="http://demo.alex-1.gophotoweb.ru" target="_blank"></a>
+            <a class="button btn-upgrade" href="<?=Config::get('path/host')?>upgrade-my-site.html"></a>
+            <a class="b1 button btn-buy" href="<?=Config::get('path/host')?>order.html?site=9_1_1&name=Alex"></a>
+        </div>
+    </div>
+</div>
 <!-- Anna -->
 <div class="b-catalog-item-new clrfix">
     <div class="b-catalog-img-new">
@@ -35,7 +119,7 @@
                 <img src="<?=Config::get('path/host')?>storage/full_description_big/8_4_2.jpg" width="677" height="393" alt="" id = "i8_4_2"/>
                 <img src="<?=Config::get('path/host')?>storage/full_description_big/8_4_3.jpg" width="677" height="393" alt="" id = "i8_4_3"/>
                 <img src="<?=Config::get('path/host')?>storage/full_description_big/8_4_4.jpg" width="677" height="393" alt="" id = "i8_4_4"/>
-                
+
 
             </div>
         </a>
@@ -57,13 +141,13 @@
             <span style='display: none' id='b8_3_3'></span>
             <span style='display: none' id='b8_3_4'></span>
             <!--<span style='display: none' id='b8_3_5'></span>-->
-            
+
             <span style='display: none' id='b8_4_1' class="active"></span>
             <span style='display: none' id='b8_4_2'></span>
             <span style='display: none' id='b8_4_3'></span>
             <span style='display: none' id='b8_4_4'></span>
             <!--<span style='display: none' id='b8_4_5'></span>-->
-            
+
         </div>
     </div>
     <div class="b-catalog-desc-new">
@@ -73,7 +157,7 @@
         <div class="b-catalog-colors-new clrfix">
 
             <div class="b-discount">
-                 <span class="b-price-new">290<sup>$</sup></span>
+                <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
             </div>
             <div class="pages-vers"></div>
             <p class="catalog-pages">
@@ -97,7 +181,9 @@
             <a class="b1 button btn-buy" href="<?=Config::get('path/host')?>order.html?site=8_1_1&name=Anna"></a>
         </div>
     </div>
-</div><div class="b-catalog-item-new clrfix">
+</div>
+
+<div class="b-catalog-item-new clrfix">
     <div class="b-catalog-img-new">
         <a class="big-photo-ref" href="http://demo.jane-1.gophotoweb.ru" target="_blank">
             <div class="catalog-photo loading">
@@ -129,9 +215,9 @@
         </div>
         <div class="b-catalog-colors-new clrfix">
 
+
             <div class="b-discount">
-                 <!--span class="b-price-old">290<sup>$</sup></span><span class="b-price-txt">новая цена</span><span class="b-price-new">145<sup>$</sup></span-->
-                 <span class="b-price-new">290<sup>$</sup></span>
+                <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
             </div>
             <div class='pages-vers'></div>
             <p class="catalog-pages">
@@ -233,8 +319,9 @@
             <h2>Mira</h2>
         </div>
         <div class="b-catalog-colors-new clrfix">
+
             <div class="b-discount">
-                <span class="b-price-new">290<sup>$</sup></span>
+                <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
             </div>
             <div class='pages-vers'></div>
             <p class="catalog-pages">
@@ -336,7 +423,7 @@
         <div class="b-catalog-colors-new clrfix">
 
             <div class="b-discount">
-                <span class="b-price-new">290<sup>$</sup></span>
+                <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
             </div>
             <div class='pages-vers'></div>
             <p class="catalog-pages">
@@ -425,7 +512,7 @@
         </div>
         <div class="b-catalog-colors-new clrfix">
             <div class="b-discount">
-                <span class="b-price-new">290<sup>$</sup></span>
+                <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
             </div>
             <div class='pages-vers'></div>
             <p class="catalog-pages">
@@ -530,7 +617,7 @@
         <div class="b-catalog-colors-new clrfix">
 
             <div class="b-discount">
-                <span class="b-price-new">290<sup>$</sup></span>
+                <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
             </div>
 
             <div class='pages-vers'></div>
@@ -628,7 +715,7 @@
         </div>
         <div class="b-catalog-colors-new clrfix">
             <div class="b-discount">
-                <span class="b-price-new">290<sup>$</sup></span>
+                <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
             </div>
             <div class='pages-vers'></div>
             <p class="catalog-pages">
@@ -716,7 +803,7 @@
         <div class="b-catalog-colors-new clrfix">
 
             <div class="b-discount">
-                <span class="b-price-new">290<sup>$</sup></span>
+                <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
             </div>
             <div class='pages-vers'></div>
             <p class="catalog-pages">
@@ -778,4 +865,3 @@
 
 </body>
 </html>
-
