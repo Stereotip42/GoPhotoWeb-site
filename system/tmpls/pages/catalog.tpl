@@ -63,7 +63,7 @@
         </div>
         <div class="b-catalog-colors-new clrfix">
 
-            <div class="b-discount">
+            <div class="b-discount-new">
                 <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
             </div>
             <div class="pages-vers"></div>
