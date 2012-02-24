@@ -63,7 +63,7 @@
             <div class="b-discount-new"></div>
             <div class="b-discount">
                 <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span><br />
-                <span style="color:#485B58">+ все опции в подарок!</span>
+                <p style="color:#485B58">+ все опции в подарок!</p>
             </div>
             <div class="pages-vers"></div>
             <p class="catalog-pages">
