@@ -353,7 +353,6 @@ class MainController extends Controller {
                     "\n\nТелефон: ".$phone."\n\nSkype: ".$skype."\n\nХостинг: ".$options['hosting'].
                     "\n\nЛоготип: ".$options['logo']."\n\nДополнительные опции: ".$options['other'].
                     "\n\nКомментарий к заказу: ".$message."\n\n".$mwPro;
-            die($mess);
             $mess = strip_tags($mess);
             $clientMess = "Вас приветствует компания GoPhotoWeb.\n\n
             Мы получили Вашу заявку на разработку сайта и свяжемся с Вами в течение 1 рабочего дня для уточнения всех деталей.\n\n
@@ -377,12 +376,11 @@ class MainController extends Controller {
             hello@gophotoweb.ru\n
             Skype: gophotoweb";
             $headers="From: \"Gophotoweb\"<hello@gophotoweb.ru>\r\n";
-            $headers.="Content-type: text/plain; charset=\"utf-8\"";
-            $clientTitle = '=?UTF-8?B?'.base64_encode('Подтверждение получения заявки на разработку сайта').'?=';
-            mail($from, $clientTitle, strip_tags($clientMess), $headers);
+            //$headers.="Content-type: text/plain; charset=\"utf-8\"";
+            //$clientTitle = '=?UTF-8?B?'.base64_encode('Подтверждение получения заявки на разработку сайта').'?=';
+            $this->sender('diffmike@gmail.com', $from, $headers, strip_tags($clientMess), 'Подтверждение получения заявки на разработку сайта');
             $headers="From: \"$name\"<$from>\r\n";
-            $headers.="Content-type: text/plain; charset=\"utf-8\"";
-            if(mail ('hello@gophotoweb.ru', $title, $mess, $headers)) {
+            if($this->sender('diffmike@gmail.com', $from, $headers, $mess, "Сообщение с сайта.")) {
                 print ('ok');
             }
         }
@@ -436,5 +434,21 @@ class MainController extends Controller {
 
     public function setActiveMenu($activ){
         $this->view->assign('activemenu', $activ);
+    }
+
+    public function sender($to, $email, $name, $message, $subject) {
+        $this->load->library('phpmailer/phpmailer.class.php', 'PHPMailerLite', 'mail');
+        $this->mail->IsHTML(false);
+        $this->mail->CharSet = 'utf-8';
+
+        $this->mail->From = $email;
+        $this->mail->FromName = $name;
+        $this->mail->Subject = $subject;
+        $this->mail->AddAddress($to);
+        $this->mail->Body = $message;
+
+        $this->mail->Send();
+        $this->mail->ClearAddresses();
+        return true;
     }
 }
