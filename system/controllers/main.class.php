@@ -339,6 +339,8 @@ class MainController extends Controller {
             $from = trim($_POST['email']);
             $url = $_POST['url'];
             $mwPro = ($_POST['discount'] == 'y') ? 'Состоит в MyWed PRO' : '';
+            $action1 = ($_POST['action1'] == 'y') ? 'Специальное предложение №1 по акции - сайт + 1 год хостинга за 199$' : '';
+            $action2 = ($_POST['action2'] == 'y') ? 'Специальное предложение №2 по акции - сайт + подстройка под экран + видео + музыка + 1 год хостинга за 299$' : '';
             $from2 = $_POST['from'];
             $sitename = $_POST['namesite'];
             $communication = $_POST['communication'];
@@ -352,7 +354,7 @@ class MainController extends Controller {
             $mess = 'Название сайта: '.$sitename."\n\nФИО: ".$_POST['name']."\n\nEmail: ".$_POST['email'].
                     "\n\nТелефон: ".$phone."\n\nSkype: ".$skype."\n\nХостинг: ".$options['hosting'].
                     "\n\nЛоготип: ".$options['logo']."\n\nДополнительные опции: ".$options['other'].
-                    "\n\nКомментарий к заказу: ".$message."\n\n".$mwPro;
+                    "\n\nКомментарий к заказу: ".$message."\n\n".$mwPro.$action1.$action2;
             $mess = strip_tags($mess);
             $clientMess = "Вас приветствует компания GoPhotoWeb.\n\n
             Мы получили Вашу заявку на разработку сайта и свяжемся с Вами в течение 1 рабочего дня для уточнения всех деталей.\n\n

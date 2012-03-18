@@ -551,10 +551,12 @@ blockquote.blue{background-color: #f0f4f4}
             .f-order-feedback textarea {width:628px; height: 71px; margin-bottom:10px;}
             .f-order-feedback .button {}
         .b-order-feedback-note {float:left; width:240px; font-size:11px; padding-top:40px; color:#a9a9a9;}
-        #discount-label {font: 14px Verdana; }
-            #discount-label span {font-size: 12px}
-            #discount-label a {font-size: 12px; color: #658d96; text-decoration: underline; margin-left: 27px;}
-            #discount-label input {margin: 0 inherit}
+        .discount-label {font: 14px Verdana; }
+            /*.discount-label p {margin-bottom: 0}*/
+            .discount-label span {font-size: 12px}
+            .discount-label a {font-size: 12px; color: #658d96; text-decoration: underline; margin-left: 27px;}
+            .discount-label input {margin: 0 inherit}
+        .discount {margin-top: -20px; color: green; text-align: right}
 
 
 /**
