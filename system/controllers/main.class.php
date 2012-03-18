@@ -380,9 +380,9 @@ class MainController extends Controller {
             $headers="From: \"Gophotoweb\"<hello@gophotoweb.ru>\r\n";
             //$headers.="Content-type: text/plain; charset=\"utf-8\"";
             //$clientTitle = '=?UTF-8?B?'.base64_encode('Подтверждение получения заявки на разработку сайта').'?=';
-            $this->sender('diffmike@gmail.com', $from, $headers, strip_tags($clientMess), 'Подтверждение получения заявки на разработку сайта');
+            $this->sender($from, $from, $headers, strip_tags($clientMess), 'Подтверждение получения заявки на разработку сайта');
             $headers="From: \"$name\"<$from>\r\n";
-            if($this->sender('diffmike@gmail.com', $from, $headers, $mess, "Сообщение с сайта.")) {
+            if($this->sender('hello@gophotoweb.ru', $from, $headers, $mess, "Сообщение с сайта.")) {
                 print ('ok');
             }
         }
