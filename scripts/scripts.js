@@ -237,34 +237,32 @@ OrderModel = {
         $('input[name=action1]').click(function(){
             if ($(this).is(':checked')) {
                 $('input[name=action2], input[name=discount]').removeAttr('checked').attr('disabled', 'true');
-                $('input[name=hosting]').removeAttr('checked').attr('disabled', 'true').parent().removeClass('active');
+                $('input[name=hosting]').removeAttr('checked').attr('disabled', 'true').parent().removeClass('active')
+                    .children().eq(1).attr('checked', 'true');
                 $('.discount').html('экономия 166$!');
-                OrderModel.discount = 1;
             }
             else {
                 $('input[name=action2], input[name=discount]').removeAttr('disabled');
-                $('input[name=hosting]').removeAttr('disabled').eq(1).attr('checked', 'true').parent().addClass('active');
+                $('input[name=hosting]').removeAttr('disabled').eq(1).parent().addClass('active');
                 $('.discount').html('');
-                OrderModel.discount = 1;
             }
-            OrderModel.priceRefresh(OrderModel.discount);
+            OrderModel.priceRefresh(OrderModel.discount = 1);
         });
         $('input[name=action2]').click(function(){
             if ($(this).is(':checked')) {
                 $('input[name=action1], input[name=discount]').removeAttr('checked').attr('disabled', 'true');
-                $('input[name=hosting]').removeAttr('checked').attr('disabled', 'true').parent().removeClass('active');
+                $('input[name=hosting]').removeAttr('checked').attr('disabled', 'true').parent().removeClass('active')
+                    .children().eq(1).attr('checked', 'true');
                 $('input[value=8],input[value=7],input[value=4]').removeAttr('checked').attr('disabled', 'true');
                 $('.discount').html('экономия 256$!');
-                OrderModel.discount = 1;
             }
             else {
                 $('input[name=action1], input[name=discount]').removeAttr('disabled');
-                $('input[name=hosting]').removeAttr('disabled').eq(1).attr('checked', 'true').parent().addClass('active');
+                $('input[name=hosting]').removeAttr('disabled').eq(1).parent().addClass('active');
                 $('input[value=8],input[value=7],input[value=4]').removeAttr('disabled');
                 $('.discount').html('');
-                OrderModel.discount = 1;
             }
-            OrderModel.priceRefresh(OrderModel.discount);
+            OrderModel.priceRefresh(OrderModel.discount = 1);
         });
         $('input[type=radio], input[type=checkbox]').bind('click', function(){ OrderModel.priceRefresh(OrderModel.discount); });
     },
@@ -273,6 +271,7 @@ OrderModel = {
         var otherPrice = 0;
         $('.line > label > input:checked').parent().parent().children('.price').each(function(){
             otherPrice += (parseInt($(this).html()));
+            console.log(parseInt($(this).html()));
 
         });
         otherPrice += (parseInt($('.line > label > div > input:checked:last').parent().parent().parent().children('.price').html()));
