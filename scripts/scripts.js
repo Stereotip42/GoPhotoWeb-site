@@ -225,12 +225,44 @@ OrderModel = {
         OrderModel.priceRefresh(1);
         $('input[name=discount]').click(function(){
             if ($(this).is(':checked')) {
+                $('input[name=action2], input[name=action1]').removeAttr('checked').attr('disabled', 'true');
                 OrderModel.discount = 0.7;
             }
             else {
+                $('input[name=action2], input[name=action1]').removeAttr('disabled');
                 OrderModel.discount = 1;
             }
             OrderModel.priceRefresh(OrderModel.discount);
+        });
+        $('input[name=action1]').click(function(){
+            if ($(this).is(':checked')) {
+                $('input[name=action2], input[name=discount]').removeAttr('checked').attr('disabled', 'true');
+                $('input[name=hosting]').removeAttr('checked').attr('disabled', 'true').parent().removeClass('active')
+                    .children().eq(1).attr('checked', 'true');
+                $('.discount').html('экономия 166$!');
+            }
+            else {
+                $('input[name=action2], input[name=discount]').removeAttr('disabled');
+                $('input[name=hosting]').removeAttr('disabled').eq(1).parent().addClass('active');
+                $('.discount').html('');
+            }
+            OrderModel.priceRefresh(OrderModel.discount = 1);
+        });
+        $('input[name=action2]').click(function(){
+            if ($(this).is(':checked')) {
+                $('input[name=action1], input[name=discount]').removeAttr('checked').attr('disabled', 'true');
+                $('input[name=hosting]').removeAttr('checked').attr('disabled', 'true').parent().removeClass('active')
+                    .children().eq(1).attr('checked', 'true');
+                $('input[value=8],input[value=7],input[value=4]').removeAttr('checked').attr('disabled', 'true');
+                $('.discount').html('экономия 256$!');
+            }
+            else {
+                $('input[name=action1], input[name=discount]').removeAttr('disabled');
+                $('input[name=hosting]').removeAttr('disabled').eq(1).parent().addClass('active');
+                $('input[value=8],input[value=7],input[value=4]').removeAttr('disabled');
+                $('.discount').html('');
+            }
+            OrderModel.priceRefresh(OrderModel.discount = 1);
         });
         $('input[type=radio], input[type=checkbox]').bind('click', function(){ OrderModel.priceRefresh(OrderModel.discount); });
     },
@@ -239,6 +271,7 @@ OrderModel = {
         var otherPrice = 0;
         $('.line > label > input:checked').parent().parent().children('.price').each(function(){
             otherPrice += (parseInt($(this).html()));
+            console.log(parseInt($(this).html()));
 
         });
         otherPrice += (parseInt($('.line > label > div > input:checked:last').parent().parent().parent().children('.price').html()));
@@ -303,6 +336,8 @@ OrderModel = {
             var namesite = $('.b-order-name > h2 > span').html()+'-'+$('.b-order-colors > label > div > input:checked').parent().parent('label').attr('id');
             var other = [];
             var discount = $('input[name=discount]').is(':checked') ? 'y' : 'n';
+            var action1 = $('input[name=action1]').is(':checked') ? 'y' : 'n';
+            var action2 = $('input[name=action2]').is(':checked') ? 'y' : 'n';
             $('input[name=other]:checked').each(function(){
                 other.push($(this).val());
             });
@@ -319,7 +354,8 @@ OrderModel = {
             else {
                 $.post(OrderModel.path+"send_site_new.html",
                     {name:name, mess:mess, email:email, phone:phone, skype:skype, communication:communication,
-                        from:source, namesite:namesite, country:country, other:other, url:url, discount:discount}, function(response){
+                        from:source, namesite:namesite, country:country, other:other, url:url,
+                        discount:discount, action1:action1, action2:action2}, function(response){
                             if (response === "ok") {
                                 window.location = OrderModel.path+"order_success.html";
                             }

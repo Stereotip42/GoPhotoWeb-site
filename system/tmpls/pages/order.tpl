@@ -87,10 +87,21 @@ $(function(){
                                 </p>
       						</div>
       					</div>
-                          <label id="discount-label">
+                          <label class="discount-label">
 							  <p><input type="checkbox" value="" name="discount">
                               <span style="white-space: nowrap; font-size: 14px">Воспользоваться 30% скидкой для членов <a style="margin-left:0px; font-size: 14px; color:#658D96; text-decoration:underline;" target="_blank" href="http://www.mywed.ru/pro/">клуба MyWed Pro</a> (cкидка не работает в период акций).</span>
                               <br><a target="_blank" href="http://blog.gophotoweb.ru/mywed-pro/" style="color:#658D96; text-decoration:underline;">узнать подробнее об условиях</a></p>
+                          </label>
+                          <label class="discount-label">
+							  <p><input type="checkbox" value="" name="action1">
+                                Специальное предложение №1 по акции - сайт + 1 год хостинга от GoPhotoWeb за 199$!
+                              </p>
+                          </label>
+                          <label class="discount-label">
+							  <p><input type="checkbox" value="" name="action2">
+                                Специальное предложение №2 по акции - сайт + подстройка под экран + видео + музыка
+                                  <br />+ 1 год хостинга от GoPhotoWeb за 299$!
+                              </p>
                           </label>
 
       					<div class="b-order-options">
@@ -151,6 +162,8 @@ $(function(){
       						<h3>Общая сумма заказа:</h3>
       						<span class="price"><?=$data['price']['price']?><sup>$</sup></span>
       					</div>
+                          <p class="discount">
+                          </p>
       					<div class="b-order-feedback">
       						<div class="f-order-feedback">
       						<label>Вопросы, комментарии или уточнения: </label>
