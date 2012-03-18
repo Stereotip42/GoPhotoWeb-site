@@ -238,7 +238,7 @@ OrderModel = {
             if ($(this).is(':checked')) {
                 $('input[name=action2], input[name=discount]').removeAttr('checked').attr('disabled', 'true');
                 $('input[name=hosting]').removeAttr('checked').attr('disabled', 'true').parent().removeClass('active')
-                    .children().eq(1).attr('checked', 'true');
+                    .children().eq(0).attr('checked', 'true');
                 $('.discount').html('экономия 166$!');
             }
             else {
@@ -252,14 +252,14 @@ OrderModel = {
             if ($(this).is(':checked')) {
                 $('input[name=action1], input[name=discount]').removeAttr('checked').attr('disabled', 'true');
                 $('input[name=hosting]').removeAttr('checked').attr('disabled', 'true').parent().removeClass('active')
-                    .children().eq(1).attr('checked', 'true');
-                $('input[value=8],input[value=7],input[value=4]').removeAttr('checked').attr('disabled', 'true');
+                    .children().eq(0).attr('checked', 'true');
+                $('input[value=8],input[value=5],input[value=4]').removeAttr('checked').attr('disabled', 'true');
                 $('.discount').html('экономия 256$!');
             }
             else {
                 $('input[name=action1], input[name=discount]').removeAttr('disabled');
                 $('input[name=hosting]').removeAttr('disabled').eq(1).parent().addClass('active');
-                $('input[value=8],input[value=7],input[value=4]').removeAttr('disabled');
+                $('input[value=8],input[value=5],input[value=4]').removeAttr('disabled');
                 $('.discount').html('');
             }
             OrderModel.priceRefresh(OrderModel.discount = 1);
