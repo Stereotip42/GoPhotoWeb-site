@@ -63,7 +63,7 @@
             $(this).parents(catalogItem).children(catalogImage).children('a').children('div.catalog-photo').children('img.current').css('display','none').removeClass("current");
             $("#i"+id+"_"+t).fadeIn(600).addClass('current');
             $(this).parents(catalogItem).children(catalogDesc).children(catalogColors).children('p.b-catalog-pages').children("img").removeClass("current");
-            $(this).parents(catalogItem).children(catalogImage).children(catalogPager).children('span').hide();
+            $(this).parent().parent().parent().parent().parent().children(catalogImage).children(catalogPager).children('span').hide();
             for (var i = 1; i <= 5; i++){
                 $("#p" + id + '_' + i).animate({borderColor: '#fff'});
                 $("#p" + id + '_' + i).addClass("current").removeClass('active');
