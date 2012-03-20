@@ -239,14 +239,15 @@ OrderModel = {
                 $('input[name=action2], input[name=discount]').removeAttr('checked').attr('disabled', 'true');
                 $('input[name=hosting]').removeAttr('checked').attr('disabled', 'true').parent().removeClass('active')
                     .children().eq(0).attr('checked', 'true');
-                $('.discount').html('экономия 166$!');
+                //$('.discount').html('экономия 166$!');
+                $('.price:last').html('199'+ '<sup>$</sup>');
             }
             else {
                 $('input[name=action2], input[name=discount]').removeAttr('disabled');
-                $('input[name=hosting]').removeAttr('disabled').eq(1).parent().addClass('active');
+                $('input[name=hosting]').removeAttr('disabled').eq(0).parent().addClass('active');
                 $('.discount').html('');
+                OrderModel.priceRefresh(OrderModel.discount = 1);
             }
-            OrderModel.priceRefresh(OrderModel.discount = 1);
         });
         $('input[name=action2]').click(function(){
             if ($(this).is(':checked')) {
@@ -254,17 +255,21 @@ OrderModel = {
                 $('input[name=hosting]').removeAttr('checked').attr('disabled', 'true').parent().removeClass('active')
                     .children().eq(0).attr('checked', 'true');
                 $('input[value=8],input[value=5],input[value=4]').removeAttr('checked').attr('disabled', 'true');
-                $('.discount').html('экономия 256$!');
+                //$('.discount').html('экономия 256$!');
+                $('.price:last').html('299'+ '<sup>$</sup>');
             }
             else {
                 $('input[name=action1], input[name=discount]').removeAttr('disabled');
-                $('input[name=hosting]').removeAttr('disabled').eq(1).parent().addClass('active');
+                $('input[name=hosting]').removeAttr('disabled').eq(0).parent().addClass('active');
                 $('input[value=8],input[value=5],input[value=4]').removeAttr('disabled');
                 $('.discount').html('');
+                OrderModel.priceRefresh(OrderModel.discount = 1);
             }
-            OrderModel.priceRefresh(OrderModel.discount = 1);
         });
-        $('input[type=radio], input[type=checkbox]').bind('click', function(){ OrderModel.priceRefresh(OrderModel.discount); });
+        $('input[type=radio], input[type=checkbox]').bind('click', function(){
+            if ($(this).attr('name') != 'action1' && $(this).attr('name') != 'action2')
+                OrderModel.priceRefresh(OrderModel.discount);
+        });
     },
     priceRefresh: function(discount) {
         var sitePrice = parseInt($('.price:first').html());

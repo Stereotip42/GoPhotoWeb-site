@@ -1,180 +1,179 @@
 <?php $this->template('pages/header.tpl')?>
 <link rel="stylesheet" type="text/css" href="<?=Config::get('path/host');?>css/order.css" />
 <script type="text/javascript">
-$(function(){
+    $(function(){
     OrderModel.init('<?=Config::get('path/host')?>', '<?=$site?>');
-});
+    });
 </script>
 <div class="foot">
 <div class="l-main-container" style="background:url(../images/hears.png) no-repeat 50% 29px;">
-	<div class="l-wrapper-up">
-    <div class="l-wrapper">
-        <div class="l-header" style="background:url(../images/hears.png) no-repeat 50% 29px;">
-            <div class="l-header-i new-bg">
-                <?php $this->template('pages/topmenu.tpl')?>
-                <!-- <div class="b-head-img b-head-img-inner clrfix">
-                        <img src="<?=Config::get('path/host');?>images/title-catalog.png" width="302" height="22" align="" class="fr" />
-                    </div>-->
-            </div>
-        </div>
-  <div class="l-container">
-      <div class="l-catalog clrfix">
-      				<div class="b-order-note">
-      					<p>Заполните форму заказа сайта. В течение одного рабочего дня с Вами свяжется специалист GoPhotoWeb и уточнит все детали. Поля, отмеченные звездочкой, обязательны для заполнения. <br /><br /></p>
-      				</div>
-      				<div class="b-order clrfix">
-      					<div class="b-order-name clrfix">
-      						<h2>Сайт:  <span><?=$name?></span></h2>
-      						<span class="price"><?=$data['price']['price']?><sup>$</sup></span>
-      					</div>
-      					<div class="b-order-site clrfix">
-      						<h3>Выберите цвет:</h3>
-      						<div class="b-order-img"><img src="images/img-order.jpg" width="418" height="243" alt="" /></div>
-      						<div class="b-order-colors">
-      							<label id="1">
-      								<input name="color" type="radio" />
-      								<img width="30" height="30" alt="" src="<?=Config::get('path/host')?>storage/full_description_colors/<?=substr($site, 0, 1)?>_1.jpg">
-      							</label>
-      							<label id="2">
-      								<input name="color" type="radio" />
-      								<img width="30" height="30" alt="" src="<?=Config::get('path/host')?>storage/full_description_colors/<?=substr($site, 0, 1)?>_2.jpg">
-      							</label>
-      							<label id="3">
-      								<input name="color" type="radio" />
-      								<img width="30" height="30" alt="" src="<?=Config::get('path/host')?>storage/full_description_colors/<?=substr($site, 0, 1)?>_3.jpg">
-      							</label>
-      							<label id="4">
-      								<input name="color" type="radio" />
-      								<img width="30" height="30" alt="" src="<?=Config::get('path/host')?>storage/full_description_colors/<?=substr($site, 0, 1)?>_4.jpg">
-      							</label>
-      						</div>
-      					</div>
-      					<div class="f-order-new clrfix">
-      						<h3>Ваши данные</h3>
-      						<div id="personal" class="f-col">
-      							<input id="name" type="text" class="textbox" tooltip="ФИО*" error="Введите ФИО" value="ФИО*" />
-      							<input id="email" type="text" class="textbox" tooltip="Email*" error="Введите Email" value="Email*" />
-      							<input id="phone" type="text" class="textbox" tooltip="Телефон*" error="Введите телефон" value="Телефон*" />
-      							<input id="skype" type="text" class="textbox" tooltip="Skype" value="Skype" />
-      						</div>
-      						<div class="f-col">
-      							<select id="country" class="textbox">
-      								<option disabled value="0">Страна проживания*</option>
-                                    <?php foreach($data['lands'] as $land): ?>
-                                        <option value="<?=$land['id']?>"><?=$land['country']?></option>
-                                    <?php endforeach; ?>
-      							</select>
+<div class="l-wrapper-up">
+<div class="l-wrapper">
+<div class="l-header" style="background:url(../images/hears.png) no-repeat 50% 29px;">
+    <div class="l-header-i new-bg">
+        <?php $this->template('pages/topmenu.tpl')?>
+        <!-- <div class="b-head-img b-head-img-inner clrfix">
+            <img src="<?=Config::get('path/host');?>images/title-catalog.png" width="302" height="22" align="" class="fr" />
+        </div>-->
+    </div>
+</div>
+<div class="l-container">
+<div class="l-catalog clrfix">
+<div class="b-order-note">
+    <p>Заполните форму заказа сайта. В течение одного рабочего дня с Вами свяжется специалист GoPhotoWeb и уточнит все детали. Поля, отмеченные звездочкой, обязательны для заполнения. <br /><br /></p>
+</div>
+<div class="b-order clrfix">
+<div class="b-order-name clrfix">
+    <h2>Сайт:  <span><?=$name?></span></h2>
+    <span class="price"><?=$data['price']['price']?><sup>$</sup></span>
+</div>
+<div class="b-order-site clrfix">
+    <h3>Выберите цвет:</h3>
+    <div class="b-order-img"><img src="images/img-order.jpg" width="418" height="243" alt="" /></div>
+    <div class="b-order-colors">
+        <label id="1">
+            <input name="color" type="radio" />
+            <img width="30" height="30" alt="" src="<?=Config::get('path/host')?>storage/full_description_colors/<?=substr($site, 0, 1)?>_1.jpg">
+        </label>
+        <label id="2">
+            <input name="color" type="radio" />
+            <img width="30" height="30" alt="" src="<?=Config::get('path/host')?>storage/full_description_colors/<?=substr($site, 0, 1)?>_2.jpg">
+        </label>
+        <label id="3">
+            <input name="color" type="radio" />
+            <img width="30" height="30" alt="" src="<?=Config::get('path/host')?>storage/full_description_colors/<?=substr($site, 0, 1)?>_3.jpg">
+        </label>
+        <label id="4">
+            <input name="color" type="radio" />
+            <img width="30" height="30" alt="" src="<?=Config::get('path/host')?>storage/full_description_colors/<?=substr($site, 0, 1)?>_4.jpg">
+        </label>
+    </div>
+</div>
+<div class="f-order-new clrfix">
+    <h3>Ваши данные</h3>
+    <div id="personal" class="f-col">
+        <input id="name" type="text" class="textbox" tooltip="ФИО*" error="Введите ФИО" value="ФИО*" />
+        <input id="email" type="text" class="textbox" tooltip="Email*" error="Введите Email" value="Email*" />
+        <input id="phone" type="text" class="textbox" tooltip="Телефон*" error="Введите телефон" value="Телефон*" />
+        <input id="skype" type="text" class="textbox" tooltip="Skype" value="Skype" />
+    </div>
+    <div class="f-col">
+        <select id="country" class="textbox">
+            <option disabled value="0">Страна проживания*</option>
+            <?php foreach($data['lands'] as $land): ?>
+            <option value="<?=$land['id']?>"><?=$land['country']?></option>
+            <?php endforeach; ?>
+        </select>
 
-      							<!--select id="communication" class="textbox">
-      								<option value="other">Предпочтительно связаться по</option>
-      								<option value="email">Email</option>
-      								<option value="phone">Телефон</option>
-      								<option value="skype">Skype</option>
-      							</select-->
+        <!--select id="communication" class="textbox">
+                                        <option value="other">Предпочтительно связаться по</option>
+                                        <option value="email">Email</option>
+                                        <option value="phone">Телефон</option>
+                                        <option value="skype">Skype</option>
+                                    </select-->
 
 
-      							<select id="source" class="textbox">
-                                    <?php foreach($data['sources'] as $source): ?>
-                                        <option value="<?=$source['id']?>"><?=$source['source']?></option>
-                                    <?php endforeach; ?>
-      							</select>
+        <select id="source" class="textbox">
+            <?php foreach($data['sources'] as $source): ?>
+            <option value="<?=$source['id']?>"><?=$source['source']?></option>
+            <?php endforeach; ?>
+        </select>
 
-                                <input id="url" type="text" class="textbox" tooltip="Укажите ваше доменное имя (URL)" value="Укажите ваше доменное имя (URL)" />
-                                <br />
-                                <p id='url-notice'>
-                                    Если у вас еще нет зарегистрированного доменного имени, указывать здесь ничего не нужно, эти данные не
-                                    обязательны для оформления заказа сайта.
-                                </p>
-      						</div>
-      					</div>
-                          <label class="discount-label">
-							  <p><input type="checkbox" value="" name="discount">
-                              <span style="white-space: nowrap; font-size: 14px">Воспользоваться 30% скидкой для членов <a style="margin-left:0px; font-size: 14px; color:#658D96; text-decoration:underline;" target="_blank" href="http://www.mywed.ru/pro/">клуба MyWed Pro</a> (cкидка не работает в период акций).</span>
-                              <br><a target="_blank" href="http://blog.gophotoweb.ru/mywed-pro/" style="color:#658D96; text-decoration:underline;">узнать подробнее об условиях</a></p>
-                          </label>
-                          <label class="discount-label">
-							  <p><input type="checkbox" value="" name="action1">
-                                Специальное предложение №1 по акции - сайт + 1 год хостинга от GoPhotoWeb за 199$!
-                              </p>
-                          </label>
-                          <label class="discount-label">
-							  <p><input type="checkbox" value="" name="action2">
-                                Специальное предложение №2 по акции - сайт + подстройка под экран + видео + музыка
-                                  <br />+ 1 год хостинга от GoPhotoWeb за 299$!
-                              </p>
-                          </label>
+        <input id="url" type="text" class="textbox" tooltip="Укажите ваше доменное имя (URL)" value="Укажите ваше доменное имя (URL)" />
+        <br />
+        <p id='url-notice'>
+            Если у вас еще нет зарегистрированного доменного имени, указывать здесь ничего не нужно, эти данные не
+            обязательны для оформления заказа сайта.
+        </p>
+    </div>
+</div>
+<label class="discount-label">
+    <p><input type="checkbox" value="" name="discount">
+        <span style="white-space: nowrap; font-size: 14px">Воспользоваться 30% скидкой для членов <a style="margin-left:0px; font-size: 14px; color:#658D96; text-decoration:underline;" target="_blank" href="http://www.mywed.ru/pro/">клуба MyWed Pro</a> (cкидка не работает в период акций).</span>
+        <br><a target="_blank" href="http://blog.gophotoweb.ru/mywed-pro/" style="color:#658D96; text-decoration:underline;">узнать подробнее об условиях</a></p>
+</label>
+<label class="discount-label">
+    <p><input type="checkbox" value="" name="action1">
+        <span style="color:#F8AA01; font:14px Verdana"><b>САЙТ + 1 год ХОСТИНГА = 199$! </b></span>
+    </p>
+</label>
+<label class="discount-label">
+    <p><input type="checkbox" value="" name="action2">
+        <span style="color:#F8AA01; font:14px Verdana"><b>САЙТ + 1 год ХОСТИНГА + ОПЦИИ (музыка, видео, подстройка) = 299$!</b></p>
+    </p>
+</label>
 
-      					<div class="b-order-options">
-      						<h3>
+<div class="b-order-options">
+    <h3>
       							<span class="lnk-order-tooltip">
       								<a href="#">Хостинг</a>
       								<ins>
-      									<div class="b-order-tooltip">
-      										<div class="b-order-tooltip-i">
-      											<b class="b-tooltip-close"><img src="images/btn-tooltip-close.png" width="11" height="9" alt="Close" /></b>
-      											<h4>Что такое хостинг</h4>
+                                          <div class="b-order-tooltip">
+                                              <div class="b-order-tooltip-i">
+                                                  <b class="b-tooltip-close"><img src="images/btn-tooltip-close.png" width="11" height="9" alt="Close" /></b>
+                                                  <h4>Что такое хостинг</h4>
                                                   <p><strong>Хостинг</strong> - это способ размещения сайта в сети интернет. Это место, на котором располагается ваш сайт. Как только вы разместили свой сайт на сервере,  кто угодно может получить доступ к нему, набрав доменное имя в строке браузера.</p>
-      											<p><strong><a href="<?=$path_host?>hosting-and-support.html">Узнайте о параметрах и преимуществах  хостинга от GoPhotoWeb.</a></strong></p>
-      										</div>
-      									</div>
-      								</ins>
+                                                  <p><strong><a href="<?=$path_host?>hosting-and-support.html">Узнайте о параметрах и преимуществах  хостинга от GoPhotoWeb.</a></strong></p>
+                                              </div>
+                                          </div>
+                                      </ins>
       							</span>
-      						</h3>
-                            <?php foreach($data['options']['hosting'] as $hosting): ?>
-                                <div class="line clrfix">
-                                    <label><input <?php if($hosting['checked'] == 'y'): ?>checked<?php endif;?> type="radio" name="hosting" value="<?=$hosting['id']?>" /><?=$hosting['option_name']?></label>
-                                    <span class="price"><?=$hosting['price']?>$</span>
-                                </div>
-                            <?php endforeach; ?>
-      					</div>
-      					<div class="b-order-options">
-      						<h3><span class="lnk-order-tooltip">
+    </h3>
+    <?php foreach($data['options']['hosting'] as $hosting): ?>
+    <div class="line clrfix">
+        <label><input <?php if($hosting['checked'] == 'y'): ?>checked<?php endif;?> type="radio" name="hosting" value="<?=$hosting['id']?>" /><?=$hosting['option_name']?></label>
+        <span class="price"><?=$hosting['price']?>$</span>
+    </div>
+    <?php endforeach; ?>
+</div>
+<div class="b-order-options">
+    <h3><span class="lnk-order-tooltip">
                                   <a href="#">Дополнительные опции:</a>
                                   <ins>
-      									<div class="b-order-tooltip">
-      										<div class="b-order-tooltip-i">
-      											<b class="b-tooltip-close"><img src="images/btn-tooltip-close.png" width="11" height="9" alt="Close" /></b>
-      											<h4>Дополнительные опции</h4>
-      											<p>Ваш сайт может стать более функциональным и удобным — все это благодаря дополнительным опциям, которые вы можете заказать к любому  сайту из каталога Gophotoweb: музыка, видео-галереи (интеграция с Vimeo/Youtube), подстройка сайта под экран, несколько языковых версий сайта.</p>
-      											<p><strong><a href="#"></a></strong></p>
-      										</div>
-      									</div>
-      								</ins>
+                                      <div class="b-order-tooltip">
+                                          <div class="b-order-tooltip-i">
+                                              <b class="b-tooltip-close"><img src="images/btn-tooltip-close.png" width="11" height="9" alt="Close" /></b>
+                                              <h4>Дополнительные опции</h4>
+                                              <p>Ваш сайт может стать более функциональным и удобным — все это благодаря дополнительным опциям, которые вы можете заказать к любому  сайту из каталога Gophotoweb: музыка, видео-галереи (интеграция с Vimeo/Youtube), подстройка сайта под экран, несколько языковых версий сайта.</p>
+                                              <p><strong><a href="#"></a></strong></p>
+                                          </div>
+                                      </div>
+                                  </ins>
                               </span>
-                            </h3>
-                              <?php foreach($data['options']['other'] as $option): ?>
-                                  <div class="line clrfix">
-                                      <label><input <?php if($option['checked'] == 'y'): ?>checked<?php endif;?> type="checkbox" name="other" value="<?=$option['id']?>" /><?=$option['option_name']?></label>
-                                      <span class="price"><?=$option['price']?>$</span>
-                                  </div>
-                              <?php endforeach; ?>
-                        </div>
-      					<div class="b-order-options">
-      						<h3>Логотип:</h3>
-                            <?php foreach($data['options']['logo'] as $logo): ?>
-                                <div class="line clrfix">
-                                    <label><input <?php if($logo['checked'] == 'y'): ?>checked<?php endif;?> type="radio" name="logo" value="<?=$logo['id']?>" /><?=$logo['option_name']?></label>
-                                    <span class="price"><?=$logo['price']?>$</span>
-                                </div>
-                            <?php endforeach; ?>
-      					</div>
-      					<div class="b-order-total clrfix">
-      						<h3>Общая сумма заказа:</h3>
-      						<span class="price"><?=$data['price']['price']?><sup>$</sup></span>
-      					</div>
-                          <p class="discount">
-                          </p>
-      					<div class="b-order-feedback">
-      						<div class="f-order-feedback">
-      						<label>Вопросы, комментарии или уточнения: </label>
-      						<textarea id="message" cols="" rows="" class="textbox" style="width:785px"></textarea>
-      						</div>
-      					</div>
-      					<div class="b-order-feedback clrfix">
-      						<div class="f-order-feedback">
-      						<label>Ознакомьтесь с условиями предоставления услуг и лицензионным соглашением:</label>
-      						<textarea id="message" cols="" rows="" class="textbox" style="width:785px; height:200px;  text-align: justify; font: 11.0px Verdana; color: #8C8D8D">
-									ДОГОВОР-ОФЕРТА
+    </h3>
+    <?php foreach($data['options']['other'] as $option): ?>
+    <div class="line clrfix">
+        <label><input <?php if($option['checked'] == 'y'): ?>checked<?php endif;?> type="checkbox" name="other" value="<?=$option['id']?>" /><?=$option['option_name']?></label>
+        <span class="price"><?=$option['price']?>$</span>
+    </div>
+    <?php endforeach; ?>
+</div>
+<div class="b-order-options">
+    <h3>Логотип:</h3>
+    <?php foreach($data['options']['logo'] as $logo): ?>
+    <div class="line clrfix">
+        <label><input <?php if($logo['checked'] == 'y'): ?>checked<?php endif;?> type="radio" name="logo" value="<?=$logo['id']?>" /><?=$logo['option_name']?></label>
+        <span class="price"><?=$logo['price']?>$</span>
+    </div>
+    <?php endforeach; ?>
+</div>
+<div class="b-order-total clrfix">
+    <h3>Общая сумма заказа:</h3>
+    <span class="price"><?=$data['price']['price']?><sup>$</sup></span>
+</div>
+<p class="discount">
+</p>
+<div class="b-order-feedback">
+    <div class="f-order-feedback">
+        <label>Вопросы, комментарии или уточнения: </label>
+        <textarea id="message" cols="" rows="" class="textbox" style="width:785px"></textarea>
+    </div>
+</div>
+<div class="b-order-feedback clrfix">
+<div class="f-order-feedback">
+<label>Ознакомьтесь с условиями предоставления услуг и лицензионным соглашением:</label>
+<textarea id="message" cols="" rows="" class="textbox" style="width:785px; height:200px;  text-align: justify; font: 11.0px Verdana; color: #8C8D8D">
+ДОГОВОР-ОФЕРТА
 
 Индивидуальный предприниматель Суслова Ю. В., действующая на основании Свидетельства, именуемая в дальнейшем "Исполнитель", публикует настоящие Условия, являющиеся публичной офертой (предложением) по созданию для Заказчика веб-сайта в соответствии с образцами, представленными Исполнителем, а также услуг по обеспечению доступности к Программному обеспечению GoPhotoWeb по управлению сайтом, услуг по размещению сайта в сети Интернет, иных сопутствующих услуг.
 
@@ -465,24 +464,24 @@ $(function(){
 
 Печатные версии скриншотов страниц Сайта и настоящих  Условий, а также любого уведомления в электронной форме, связанного с работой системы управления сайтом, при надлежащем их заверении могут быть приняты в качестве доказательств по спорным вопросам  в судебном и административном производстве.
 
-      						</textarea>
-                              <p id="error">
-                                  Для заказа вам необходимо принять условия предоставления услуг и лицензионного соглашения
-                              </p>
-                              <label id="agreement">
-                                  <input type="checkbox">
-                                  Я принимаю условия предоставления услуг и лицензионного соглашения
-                              </label>
-      						<input type="button" class="button btn-back" value="" />
-      						<input type="submit" id="send" class="button btn-order" value="" />
-      						</div>
-      					</div>
-      				</div>
-      			</div>
-        </div>
-    </div>
-        </div>
-    <?php $this->template('pages/footer.tpl');?>
+</textarea>
+<p id="error">
+    Для заказа вам необходимо принять условия предоставления услуг и лицензионного соглашения
+</p>
+<label id="agreement">
+    <input type="checkbox">
+    Я принимаю условия предоставления услуг и лицензионного соглашения
+</label>
+<input type="button" class="button btn-back" value="" />
+<input type="submit" id="send" class="button btn-order" value="" />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<?php $this->template('pages/footer.tpl');?>
 </div>
 </div>
 <?php $this->template('pages/popup.tpl');?>
