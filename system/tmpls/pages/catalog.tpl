@@ -6,7 +6,7 @@
 <div class='l-wrapper-up'>
 <div class="l-wrapper">
 <div class="l-header" style="background:url(../images/hears.png) no-repeat 50% 29px;">
-    <div class="l-header-i new-bg">
+    <div class="l-header-i new-bg-catalog">
         <?php $this->template('pages/topmenu.tpl')?>
     </div>
 </div>
@@ -63,7 +63,9 @@
             <div class="b-discount-new"></div>
             <div class="b-discount">
                 <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span><br />
-                <p style="color:#485B58">+ все опции в подарок!</p>
+                <p class='action-desc'>
+                    или <span style="color:#e74135">воспользуйтесь одним <br />из двух выгодных предложений,</span><br />нажав “купить”
+                </p>
             </div>
             <div class="pages-vers"></div>
             <p class="catalog-pages">
@@ -157,6 +159,9 @@
 
             <div class="b-discount">
                 <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
+                <p class='action-desc'>
+                    или <span style="color:#e74135">воспользуйтесь одним <br />из двух выгодных предложений,</span><br />нажав “купить”
+                </p>
             </div>
             <div class="pages-vers"></div>
             <p class="catalog-pages">
@@ -217,6 +222,9 @@
 
             <div class="b-discount">
                 <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
+                <p class='action-desc'>
+                    или <span style="color:#e74135">воспользуйтесь одним <br />из двух выгодных предложений,</span><br />нажав “купить”
+                </p>
             </div>
             <div class='pages-vers'></div>
             <p class="catalog-pages">
@@ -321,6 +329,9 @@
 
             <div class="b-discount">
                 <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
+                <p class='action-desc'>
+                    или <span style="color:#e74135">воспользуйтесь одним <br />из двух выгодных предложений,</span><br />нажав “купить”
+                </p>
             </div>
             <div class='pages-vers'></div>
             <p class="catalog-pages">
@@ -423,6 +434,9 @@
 
             <div class="b-discount">
                 <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
+                <p class='action-desc'>
+                    или <span style="color:#e74135">воспользуйтесь одним <br />из двух выгодных предложений,</span><br />нажав “купить”
+                </p>
             </div>
             <div class='pages-vers'></div>
             <p class="catalog-pages">
@@ -512,6 +526,9 @@
         <div class="b-catalog-colors-new clrfix">
             <div class="b-discount">
                 <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
+                <p class='action-desc'>
+                    или <span style="color:#e74135">воспользуйтесь одним <br />из двух выгодных предложений,</span><br />нажав “купить”
+                </p>
             </div>
             <div class='pages-vers'></div>
             <p class="catalog-pages">
@@ -617,6 +634,9 @@
 
             <div class="b-discount">
                 <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
+                <p class='action-desc'>
+                    или <span style="color:#e74135">воспользуйтесь одним <br />из двух выгодных предложений,</span><br />нажав “купить”
+                </p>
             </div>
 
             <div class='pages-vers'></div>
@@ -715,6 +735,9 @@
         <div class="b-catalog-colors-new clrfix">
             <div class="b-discount">
                 <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
+                <p class='action-desc'>
+                    или <span style="color:#e74135">воспользуйтесь одним <br />из двух выгодных предложений,</span><br />нажав “купить”
+                </p>
             </div>
             <div class='pages-vers'></div>
             <p class="catalog-pages">
@@ -803,6 +826,9 @@
 
             <div class="b-discount">
                 <span class="b-price-txt"></span><span class="b-price-new">290<sup>$</sup> </span>
+                <p class='action-desc'>
+                    или <span style="color:#e74135">воспользуйтесь одним <br />из двух выгодных предложений,</span><br />нажав “купить”
+                </p>
             </div>
             <div class='pages-vers'></div>
             <p class="catalog-pages">

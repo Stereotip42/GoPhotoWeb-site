@@ -390,6 +390,8 @@ body{height: 100%}
 /**
 * @section Catalog
 */
+.action-desc {color:#485B58;width: 245px;margin-left: -12px;margin-bottom: -49px !important;line-height: 1;margin-top: -3px;}
+
 .l-catalog {background:#fff; padding: 6px 15px 0; }
 .b-catalog-item { border:2px solid #f4f7f7; padding:12px; margin-bottom:27px; position:relative; background-color: #fefdfd}
 .b-catalog-img {float:left; width:556px; padding-right:15px; overflow:hidden;}
