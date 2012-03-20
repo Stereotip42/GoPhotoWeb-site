@@ -1,10 +1,10 @@
 // JavaScript Document
 
 /*$(document).ready(function() {	
-	if (jQuery.browser.msie && jQuery.browser.version == '6.0') {     
-		$('.l-home .l-col:first').addClass('first');		
-     };
-});*/
+ if (jQuery.browser.msie && jQuery.browser.version == '6.0') {
+ $('.l-home .l-col:first').addClass('first');
+ };
+ });*/
 
 
 var timeout    = 500;
@@ -13,8 +13,8 @@ var ddmenuitem = 0;
 
 function jsddm_open()
 {jsddm_canceltimer();
-   jsddm_close();
-   ddmenuitem = $(this).find('ul').css('visibility', 'visible');}
+    jsddm_close();
+    ddmenuitem = $(this).find('ul').css('visibility', 'visible');}
 
 function jsddm_close()
 {if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');}
@@ -25,102 +25,102 @@ function jsddm_timer()
 
 function jsddm_canceltimer()
 {if(closetimer)
-   {window.clearTimeout(closetimer);
-      closetimer = null;}}
+{window.clearTimeout(closetimer);
+    closetimer = null;}}
 
 WidgetGallery = {
-        next: false,
-        prev: true,
-        action: false,
-        size: 0,
-        options: {'img_container':'', 'i_logo':'', 'l_arrow':'', 'r_arrow': ''},
-        time: 200,
-        init: function(container, i_logo, l_arrow, r_arrow) {
-            WidgetGallery.options.img_container = container;
-            WidgetGallery.options.i_logo = i_logo;
-            WidgetGallery.options.l_arrow = l_arrow;
-            WidgetGallery.options.r_arrow = r_arrow;
-            WidgetGallery.size = $('.'+container + ' img').size() - 1;
+    next: false,
+    prev: true,
+    action: false,
+    size: 0,
+    options: {'img_container':'', 'i_logo':'', 'l_arrow':'', 'r_arrow': ''},
+    time: 200,
+    init: function(container, i_logo, l_arrow, r_arrow) {
+        WidgetGallery.options.img_container = container;
+        WidgetGallery.options.i_logo = i_logo;
+        WidgetGallery.options.l_arrow = l_arrow;
+        WidgetGallery.options.r_arrow = r_arrow;
+        WidgetGallery.size = $('.'+container + ' img').size() - 1;
 
-            $('.' + WidgetGallery.options.l_arrow).live('click', function() {
+        $('.' + WidgetGallery.options.l_arrow).live('click', function() {
             var active = $('.' + WidgetGallery.options.img_container + ' img.active').index();
             WidgetGallery.slideImage(active - 1);
             return false;
-            });
-            $('.' + WidgetGallery.options.r_arrow).live('click', function() {
-                var active = $('.' + WidgetGallery.options.img_container + ' img.active').index();
-                WidgetGallery.slideImage(active + 1);
-                return false;
-            });
-            $('.' + WidgetGallery.options.i_logo + ' a').live('click', function() {
-                var links = $('.' + WidgetGallery.options.i_logo + ' a');
-                var index = $(links).index(this);
-                WidgetGallery.slideImage(index);
-                return false;
-            });
-        },
-        slideImage: function(index) {
-            if (index >= 0 && index < WidgetGallery.size && WidgetGallery.action == false) {
-                WidgetGallery.action = true;
-                $('.' + WidgetGallery.options.img_container + ' .active').fadeOut(WidgetGallery.time, function() {
-                    $(this).removeClass('active');
-                    $('.' + WidgetGallery.options.i_logo + '.active').removeClass('active');
-                    $('.' + WidgetGallery.options.i_logo).eq(index).addClass('active');
+        });
+        $('.' + WidgetGallery.options.r_arrow).live('click', function() {
+            var active = $('.' + WidgetGallery.options.img_container + ' img.active').index();
+            WidgetGallery.slideImage(active + 1);
+            return false;
+        });
+        $('.' + WidgetGallery.options.i_logo + ' a').live('click', function() {
+            var links = $('.' + WidgetGallery.options.i_logo + ' a');
+            var index = $(links).index(this);
+            WidgetGallery.slideImage(index);
+            return false;
+        });
+    },
+    slideImage: function(index) {
+        if (index >= 0 && index < WidgetGallery.size && WidgetGallery.action == false) {
+            WidgetGallery.action = true;
+            $('.' + WidgetGallery.options.img_container + ' .active').fadeOut(WidgetGallery.time, function() {
+                $(this).removeClass('active');
+                $('.' + WidgetGallery.options.i_logo + '.active').removeClass('active');
+                $('.' + WidgetGallery.options.i_logo).eq(index).addClass('active');
 
-                    if (index == 0) {
-                        WidgetGallery.prev = true;
-                        $('.' + WidgetGallery.options.l_arrow).fadeOut(WidgetGallery.time);
-                        if (WidgetGallery.next == true) $('.' + WidgetGallery.options.r_arrow).fadeIn(WidgetGallery.time);
-                    }
-                    else if (index == (WidgetGallery.size - 1)) {
-                        WidgetGallery.next = true;
-                        $('.' + WidgetGallery.options.r_arrow).fadeOut(WidgetGallery.time);
-                        if (WidgetGallery.prev == true) $('.' + WidgetGallery.options.l_arrow).fadeIn(WidgetGallery.time);
-                    }
-                    else {
-                        if (WidgetGallery.prev == true) $('.' + WidgetGallery.options.l_arrow).fadeIn(WidgetGallery.time);
-                        if (WidgetGallery.next == true) $('.' + WidgetGallery.options.r_arrow).fadeIn(WidgetGallery.time);
-                    }
-                    $('.' + WidgetGallery.options.img_container +' img').eq(index).fadeIn(WidgetGallery.time, function() {
-                        $(this).addClass('active');
-                        WidgetGallery.action = false;
-                    });
+                if (index == 0) {
+                    WidgetGallery.prev = true;
+                    $('.' + WidgetGallery.options.l_arrow).fadeOut(WidgetGallery.time);
+                    if (WidgetGallery.next == true) $('.' + WidgetGallery.options.r_arrow).fadeIn(WidgetGallery.time);
+                }
+                else if (index == (WidgetGallery.size - 1)) {
+                    WidgetGallery.next = true;
+                    $('.' + WidgetGallery.options.r_arrow).fadeOut(WidgetGallery.time);
+                    if (WidgetGallery.prev == true) $('.' + WidgetGallery.options.l_arrow).fadeIn(WidgetGallery.time);
+                }
+                else {
+                    if (WidgetGallery.prev == true) $('.' + WidgetGallery.options.l_arrow).fadeIn(WidgetGallery.time);
+                    if (WidgetGallery.next == true) $('.' + WidgetGallery.options.r_arrow).fadeIn(WidgetGallery.time);
+                }
+                $('.' + WidgetGallery.options.img_container +' img').eq(index).fadeIn(WidgetGallery.time, function() {
+                    $(this).addClass('active');
+                    WidgetGallery.action = false;
                 });
-            }
+            });
         }
     }
+}
 
 $(document).ready(function() {
-	$('#navTop > li').bind('mouseover', jsddm_open)
-        $('#navTop > li').bind('mouseout',  jsddm_timer)
+    $('#navTop > li').bind('mouseover', jsddm_open)
+    $('#navTop > li').bind('mouseout',  jsddm_timer)
 
-        $('.b-faq-answer').hide();
-	//$('.b-faq-answer:first').show();
-	
-        $('a.lnk-faq').click(function(){
-                var state = false;
-                if($(this).parent().next('.b-faq-answer').css('display') == 'block'){
-                    state = true;
-                }
-                $('.b-faq-answer').slideUp('fast');
-                if (state){
-                    $(this).parent().next('.b-faq-answer').slideUp('fast');
-                } else {
-                    $(this).parent().next('.b-faq-answer').slideDown('fast')
-                }
-                return false;
-	});
-	$('.b-faq-all a').toggle(function(){
+    $('.b-faq-answer').hide();
+    //$('.b-faq-answer:first').show();
+
+    $('a.lnk-faq').click(function(){
+        var state = false;
+        if($(this).parent().next('.b-faq-answer').css('display') == 'block'){
+            state = true;
+        }
+        $('.b-faq-answer').slideUp('fast');
+        if (state){
+            $(this).parent().next('.b-faq-answer').slideUp('fast');
+        } else {
+            $(this).parent().next('.b-faq-answer').slideDown('fast')
+        }
+        return false;
+    });
+    $('.b-faq-all a').toggle(function(){
             $('.b-faq-answer').slideDown('fast');
             $(this).html('скрыть все ответы');
-                   return false;
-	},
-	function(){
+            return false;
+        },
+        function(){
             $('.b-faq-answer').slideUp('fast');
             $(this).html('открыть все ответы');
-		return false;
-	}
-	);
+            return false;
+        }
+    );
 //	 $('.btn-buy').click( function() {
 //         var h = $(window).height();
 //         var margin = $(window).height() /2  - $('.b-popup-buy').height() / 2
@@ -139,28 +139,28 @@ $(document).ready(function() {
 //	 });
 
     //When page loads...
-	$(".tab_content").hide(); //Hide all content
-	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
-	$(".tab_content:first").show(); //Show first tab content
+    $(".tab_content").hide(); //Hide all content
+    $("ul.tabs li:first").addClass("active").show(); //Activate first tab
+    $(".tab_content:first").show(); //Show first tab content
 
 
-	//On Click Event
-	$("ul.tabs li").click(function() {
+    //On Click Event
+    $("ul.tabs li").click(function() {
 
-		$("ul.tabs li").removeClass("active"); //Remove any "active" class
-		$(this).addClass("active"); //Add "active" class to selected tab
-		$(".tab_content").hide(); //Hide all tab content
+        $("ul.tabs li").removeClass("active"); //Remove any "active" class
+        $(this).addClass("active"); //Add "active" class to selected tab
+        $(".tab_content").hide(); //Hide all tab content
 
-		var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+        var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
         if (activeTab == "#tab1")
             WidgetGallery.init('img_container', 'i_logo', 'l_arrow', 'r_arrow');
         else
             WidgetGallery.init('img_container2', 'i_logo2', 'l_arrow2', 'r_arrow2');
-		$(activeTab).show(); //Fade in the active ID content
+        $(activeTab).show(); //Fade in the active ID content
 
-		return false;
-	});
- });
+        return false;
+    });
+});
 
 document.onclick = jsddm_close;
 
@@ -169,8 +169,9 @@ OrderModel = {
     flag: true,
     path: '',
     discount: 1,
+    sitePrice: 290,
     init: function(path, id) {
-
+        OrderModel.sitePrice = parseInt($('.price:first').html());
         $('.jstyling-radio').css('margin-right', '6px');
         OrderModel.id = id;
         OrderModel.path = path;
@@ -218,11 +219,11 @@ OrderModel = {
                 $(this).val('');
             }
         }).bind('blur', function() {
-            if ($(this).val() == '') {
-                $(this).val($(this).attr('tooltip'));
-            }
-        });
-        OrderModel.priceRefresh(1);
+                if ($(this).val() == '') {
+                    $(this).val($(this).attr('tooltip'));
+                }
+            });
+        OrderModel.priceRefresh(1, OrderModel.sitePrice);
         $('input[name=discount]').click(function(){
             if ($(this).is(':checked')) {
                 $('input[name=action2], input[name=action1]').removeAttr('checked').attr('disabled', 'true');
@@ -232,7 +233,7 @@ OrderModel = {
                 $('input[name=action2], input[name=action1]').removeAttr('disabled');
                 OrderModel.discount = 1;
             }
-            OrderModel.priceRefresh(OrderModel.discount);
+            OrderModel.priceRefresh(OrderModel.discount, OrderModel.sitePrice);
         });
         $('input[name=action1]').click(function(){
             if ($(this).is(':checked')) {
@@ -241,12 +242,13 @@ OrderModel = {
                     .children().eq(0).attr('checked', 'true');
                 //$('.discount').html('экономия 166$!');
                 $('.price:last').html('199'+ '<sup>$</sup>');
+                OrderModel.priceRefresh(OrderModel.discount = 1, OrderModel.sitePrice = 199);
             }
             else {
                 $('input[name=action2], input[name=discount]').removeAttr('disabled');
                 $('input[name=hosting]').removeAttr('disabled').eq(0).parent().addClass('active');
                 $('.discount').html('');
-                OrderModel.priceRefresh(OrderModel.discount = 1);
+                OrderModel.priceRefresh(OrderModel.discount = 1, OrderModel.sitePrice = parseInt($('.price:first').html()));
             }
         });
         $('input[name=action2]').click(function(){
@@ -257,22 +259,22 @@ OrderModel = {
                 $('input[value=8],input[value=5],input[value=4]').removeAttr('checked').attr('disabled', 'true');
                 //$('.discount').html('экономия 256$!');
                 $('.price:last').html('299'+ '<sup>$</sup>');
+                OrderModel.priceRefresh(OrderModel.discount = 1, OrderModel.sitePrice = 299);
             }
             else {
                 $('input[name=action1], input[name=discount]').removeAttr('disabled');
                 $('input[name=hosting]').removeAttr('disabled').eq(0).parent().addClass('active');
                 $('input[value=8],input[value=5],input[value=4]').removeAttr('disabled');
                 $('.discount').html('');
-                OrderModel.priceRefresh(OrderModel.discount = 1);
+                OrderModel.priceRefresh(OrderModel.discount = 1, OrderModel.sitePrice = parseInt($('.price:first').html()));
             }
         });
         $('input[type=radio], input[type=checkbox]').bind('click', function(){
             if ($(this).attr('name') != 'action1' && $(this).attr('name') != 'action2')
-                OrderModel.priceRefresh(OrderModel.discount);
+                OrderModel.priceRefresh(OrderModel.discount, OrderModel.sitePrice);
         });
     },
-    priceRefresh: function(discount) {
-        var sitePrice = parseInt($('.price:first').html());
+    priceRefresh: function(discount, sitePrice) {
         var otherPrice = 0;
         $('.line > label > input:checked').parent().parent().children('.price').each(function(){
             otherPrice += (parseInt($(this).html()));
@@ -352,8 +354,8 @@ OrderModel = {
                 $.post(OrderModel.path+"dont_agree.html",
                     {name:name, mess:mess, email:email, phone:phone, skype:skype, communication:communication,
                         from:source, namesite:namesite, country:country, other:other, url:url}, function(){
-                            $('#error').show();
-                });
+                        $('#error').show();
+                    });
                 return false;
             }
             else {
@@ -361,14 +363,14 @@ OrderModel = {
                     {name:name, mess:mess, email:email, phone:phone, skype:skype, communication:communication,
                         from:source, namesite:namesite, country:country, other:other, url:url,
                         discount:discount, action1:action1, action2:action2}, function(response){
-                            if (response === "ok") {
-                                window.location = OrderModel.path+"order_success.html";
-                            }
-                            else {
-                                var msg = 'Ошибка при отправке заявки. Пожалуйста, заполните поля заявки еще раз и нажмите кнопку отправить.';
-                                $('#msgbox').html(msg).css('visibility', 'visible').css('color', 'red');
-                            }
-                });
+                        if (response === "ok") {
+                            window.location = OrderModel.path+"order_success.html";
+                        }
+                        else {
+                            var msg = 'Ошибка при отправке заявки. Пожалуйста, заполните поля заявки еще раз и нажмите кнопку отправить.';
+                            $('#msgbox').html(msg).css('visibility', 'visible').css('color', 'red');
+                        }
+                    });
                 $('#error').hide();
             }
         }
